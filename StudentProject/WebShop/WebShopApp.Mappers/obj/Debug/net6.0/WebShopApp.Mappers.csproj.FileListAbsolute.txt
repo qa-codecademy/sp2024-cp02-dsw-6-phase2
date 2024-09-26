@@ -1,0 +1,17 @@
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\bin\Debug\net6.0\WebShopApp.Mappers.deps.json
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\bin\Debug\net6.0\WebShopApp.Mappers.dll
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\bin\Debug\net6.0\WebShopApp.Mappers.pdb
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\bin\Debug\net6.0\WebShopApp.Domain.dll
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\bin\Debug\net6.0\WebShopApp.DTOs.dll
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\bin\Debug\net6.0\WebShopApp.Domain.pdb
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\bin\Debug\net6.0\WebShopApp.DTOs.pdb
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\obj\Debug\net6.0\WebShopApp.Mappers.csproj.AssemblyReference.cache
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\obj\Debug\net6.0\WebShopApp.Mappers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\obj\Debug\net6.0\WebShopApp.Mappers.AssemblyInfoInputs.cache
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\obj\Debug\net6.0\WebShopApp.Mappers.AssemblyInfo.cs
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\obj\Debug\net6.0\WebShopApp.Mappers.csproj.CoreCompileInputs.cache
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\obj\Debug\net6.0\WebShopA.78FC99EF.Up2Date
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\obj\Debug\net6.0\WebShopApp.Mappers.dll
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\obj\Debug\net6.0\refint\WebShopApp.Mappers.dll
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\obj\Debug\net6.0\WebShopApp.Mappers.pdb
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Mappers\obj\Debug\net6.0\ref\WebShopApp.Mappers.dll

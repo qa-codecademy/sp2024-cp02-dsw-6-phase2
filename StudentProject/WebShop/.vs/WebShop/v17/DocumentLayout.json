@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.dataaccess\\implementation\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|solutionrelative:webshopapp.dataaccess\\implementation\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.dataaccess\\implementation\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|solutionrelative:webshopapp.dataaccess\\implementation\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.domain\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|solutionrelative:webshopapp.domain\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|solutionrelative:webshopapp.domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.dataaccess\\interface\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|solutionrelative:webshopapp.dataaccess\\interface\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.services\\implementation\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|solutionrelative:webshopapp.services\\implementation\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.dataaccess\\interface\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|solutionrelative:webshopapp.dataaccess\\interface\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.dataaccess\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|solutionrelative:webshopapp.dataaccess\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.services\\implementation\\cartservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|solutionrelative:webshopapp.services\\implementation\\cartservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Implementation\\CartRepository.cs",
+              "RelativeDocumentMoniker": "WebShopApp.DataAccess\\Implementation\\CartRepository.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Implementation\\CartRepository.cs",
+              "RelativeToolTip": "WebShopApp.DataAccess\\Implementation\\CartRepository.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T11:37:56.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Implementation\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "WebShopApp.DataAccess\\Implementation\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Implementation\\OrderRepository.cs",
+              "RelativeToolTip": "WebShopApp.DataAccess\\Implementation\\OrderRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowCYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T11:35:46.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "WebShopApp.Domain\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\Cart.cs",
+              "RelativeToolTip": "WebShopApp.Domain\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T11:27:39.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Interface\\ICartRepository.cs",
+              "RelativeDocumentMoniker": "WebShopApp.DataAccess\\Interface\\ICartRepository.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Interface\\ICartRepository.cs",
+              "RelativeToolTip": "WebShopApp.DataAccess\\Interface\\ICartRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T11:16:34.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Interface\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "WebShopApp.DataAccess\\Interface\\IOrderRepository.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Interface\\IOrderRepository.cs",
+              "RelativeToolTip": "WebShopApp.DataAccess\\Interface\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T11:13:43.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Interface\\IRepository.cs",
+              "RelativeDocumentMoniker": "WebShopApp.DataAccess\\Interface\\IRepository.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Interface\\IRepository.cs",
+              "RelativeToolTip": "WebShopApp.DataAccess\\Interface\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T11:12:43.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderServices.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\Implementation\\OrderServices.cs",
+              "RelativeDocumentMoniker": "WebShopApp.Services\\Implementation\\OrderServices.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\Implementation\\OrderServices.cs",
+              "RelativeToolTip": "WebShopApp.Services\\Implementation\\OrderServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T11:11:40.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "WebShopApp.Domain\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\Order.cs",
+              "RelativeToolTip": "WebShopApp.Domain\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T11:06:49.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CartServices.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\Implementation\\CartServices.cs",
+              "RelativeDocumentMoniker": "WebShopApp.Services\\Implementation\\CartServices.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\Implementation\\CartServices.cs",
+              "RelativeToolTip": "WebShopApp.Services\\Implementation\\CartServices.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T11:05:46.728Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

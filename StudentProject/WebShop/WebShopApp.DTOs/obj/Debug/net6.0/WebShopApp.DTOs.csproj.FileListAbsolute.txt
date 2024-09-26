@@ -1,0 +1,15 @@
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\bin\Debug\net6.0\WebShopApp.DTOs.deps.json
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\bin\Debug\net6.0\WebShopApp.DTOs.dll
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\bin\Debug\net6.0\WebShopApp.DTOs.pdb
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\bin\Debug\net6.0\WebShopApp.Domain.dll
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\bin\Debug\net6.0\WebShopApp.Domain.pdb
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\obj\Debug\net6.0\WebShopApp.DTOs.csproj.AssemblyReference.cache
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\obj\Debug\net6.0\WebShopApp.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\obj\Debug\net6.0\WebShopApp.DTOs.AssemblyInfoInputs.cache
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\obj\Debug\net6.0\WebShopApp.DTOs.AssemblyInfo.cs
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\obj\Debug\net6.0\WebShopApp.DTOs.csproj.CoreCompileInputs.cache
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\obj\Debug\net6.0\WebShopA.E52BEFB2.Up2Date
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\obj\Debug\net6.0\WebShopApp.DTOs.dll
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\obj\Debug\net6.0\refint\WebShopApp.DTOs.dll
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\obj\Debug\net6.0\WebShopApp.DTOs.pdb
+C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.DTOs\obj\Debug\net6.0\ref\WebShopApp.DTOs.dll

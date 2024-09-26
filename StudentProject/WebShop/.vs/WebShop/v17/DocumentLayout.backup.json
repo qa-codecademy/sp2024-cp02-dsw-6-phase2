@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.services\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|solutionrelative:webshopapp.services\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.services\\webshopapp.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|solutionrelative:webshopapp.services\\webshopapp.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebShopApp.Services",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\WebShopApp.Services.csproj",
+              "RelativeDocumentMoniker": "WebShopApp.Services\\WebShopApp.Services.csproj",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\WebShopApp.Services.csproj",
+              "RelativeToolTip": "WebShopApp.Services\\WebShopApp.Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-20T11:00:05.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\Interface\\IOrderService.cs",
+              "RelativeDocumentMoniker": "WebShopApp.Services\\Interface\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\Interface\\IOrderService.cs*",
+              "RelativeToolTip": "WebShopApp.Services\\Interface\\IOrderService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T10:58:41.681Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
