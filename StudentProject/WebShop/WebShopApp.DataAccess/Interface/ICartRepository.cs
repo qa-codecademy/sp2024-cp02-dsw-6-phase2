@@ -12,6 +12,7 @@ namespace WebShopApp.DataAccess.Interface
         Task AddProductToCartAsync(int cartId, int productId, int quantity);
         Task RemoveProductFromCartAsync(int cartId, int productId);
         Task ClearCartAsync(int cartId);
+        Task<Cart> GetCartByIdAsync(int cartId);
 
     }
 }

@@ -12,19 +12,19 @@ namespace WebShopApp.DataAccess.Implementation
             _dbContext = dbContext;
         }
 
-        public async Task Add(Product entity)
+        public async Task Add(Productt entity)
         {
             _dbContext.Products.Add(entity);
            await _dbContext.SaveChangesAsync();
         }
 
-        public void Delete(Product entity)
+        public void Delete(Productt entity)
         {
             _dbContext.Products.Remove(entity);
             _dbContext.SaveChanges();
         }
 
-        public List<Product> FilterProducts(int? category, string? brand)
+        public List<Productt> FilterProducts(int? category, string? brand)
         {
             if (brand == null)
             {
@@ -38,17 +38,19 @@ namespace WebShopApp.DataAccess.Implementation
             return _dbContext.Products.Where(x => x.Brand.ToLower() == brand.ToLower() && (int)x.Category == category.Value).ToList();
         }
 
-        public List<Product> GetAll()
+        public List<Productt> GetAll()
         {
-            return _dbContext.Products.Include(x => x.Orders).ToList();
+            return _dbContext.Products.ToList();
+            
         }
 
-        public Product GetById(int id)
+        public Productt GetById(int id)
         {
-         return   _dbContext.Products.Include(x => x.Orders).FirstOrDefault(x => x.Id == id);
+            return   _dbContext.Products.FirstOrDefault(x => x.Id == id);
+
         }
 
-        public async Task Update(Product entity)
+        public async Task Update(Productt entity)
         {
             _dbContext.Update(entity);
             await _dbContext.SaveChangesAsync();

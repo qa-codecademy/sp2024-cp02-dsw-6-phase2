@@ -7,16 +7,17 @@ namespace WebShopApp.DataAccess
     public class WebAppDbContext : DbContext
     {
         public WebAppDbContext(DbContextOptions options) : base(options) { }
-        public DbSet<User> Users { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Order> Orders { get; set; }
+        public DbSet<Userr> Users { get; set; }
+        public DbSet<Productt> Products { get; set; }
+        public DbSet<Orderr> Orders { get; set; }
         public DbSet<Cart> Carts { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Product>(entity =>
+            modelBuilder.Entity<Productt>(entity =>
             {
                 // Configure primary key
                 entity.HasKey(p => p.Id);
@@ -58,29 +59,12 @@ namespace WebShopApp.DataAccess
                 // Configure optional properties
                 entity.Property(p => p.Discount)
                     .IsRequired(false);
-
-                // Configure relationships
-                // Assuming one-to-many relationships with Users and Orders
-                entity.HasMany(p => p.Users)
-                    .WithMany(u => u.Products)
-                    .UsingEntity<Dictionary<string, object>>(
-                        "ProductUser",
-                        j => j.HasOne<User>().WithMany().HasForeignKey("UserId"),
-                        j => j.HasOne<Product>().WithMany().HasForeignKey("ProductId"));
-
-
-                entity.HasMany(p => p.Orders)
-                    .WithMany(o => o.Products)
-                    .UsingEntity<Dictionary<string, object>>(
-                        "OrderProduct",
-                        j => j.HasOne<Order>().WithMany().HasForeignKey("OrderId"),
-                        j => j.HasOne<Product>().WithMany().HasForeignKey("ProductId"));
-
-
-
-
+               
+       
             });
-            modelBuilder.Entity<User>(entity =>
+
+
+            modelBuilder.Entity<Userr>(entity =>
             {
                 entity.HasKey(u => u.Id);
 
@@ -165,35 +149,35 @@ namespace WebShopApp.DataAccess
                     .IsUnique();
             });
 
+            
 
 
-            //// Configure Cart and CartItem relationship
-            //modelBuilder.Entity<Cart>()
-            //    .HasMany(c => c.CartItems)           // A Cart has many CartItems
-            //    .WithOne(ci => ci.Cart)              // Each CartItem belongs to one Cart
-            //    .HasForeignKey(ci => ci.CartId)      // Foreign key in CartItem is CartId
-            //    .OnDelete(DeleteBehavior.Cascade);   // Deleting a Cart deletes related CartItems
+            modelBuilder.Entity<Orderr>(entity =>
+            {
+                entity.HasKey(o => o.Id);
 
-            //modelBuilder.Entity<Cart>()
-            //         .Property(c => c.TotalAmount)
-            //        .HasColumnType("decimal(18,2)");
+                entity.HasOne(o => o.User)
+                .WithMany(u => u.Orders)
+                .HasForeignKey(o => o.UserId)
+                 .OnDelete(DeleteBehavior.Cascade);
 
-            //modelBuilder.Entity<Cart>()
-            //         .Property(c => c.TotalAmount)
-            //         .HasDefaultValue(0.00m);
+                entity.Property(o => o.TotalAmount)
+                   .HasColumnType("decimal(18,2)")
+                   .HasDefaultValue(0.00m);
+            });
 
-            //// Configure CartItem and Product relationship
-            //modelBuilder.Entity<CartItem>()
-            //    .HasOne(ci => ci.Product)            // Each CartItem is related to one Product
-            //    .WithMany()                          // A Product can be in many CartItems
-            //    .HasForeignKey(ci => ci.ProductId)   // Foreign key in CartItem is ProductId
-            //    .OnDelete(DeleteBehavior.Restrict);  // Prevent deleting Product if referenced by CartItem
 
-            //// Optional: Index to ensure each Product appears once in a Cart
-            //modelBuilder.Entity<CartItem>()
-            //    .HasIndex(ci => new { ci.CartId, ci.ProductId })
-            //    .IsUnique(); // Ensures that a CartItem with the same CartId and ProductId is unique
+            modelBuilder.Entity<OrderItem>(entity =>
+            {
+                entity.HasOne(oi => oi.Product)
+                .WithMany()
+                .HasForeignKey(oi => oi.ProductId)
+                .OnDelete(DeleteBehavior.Restrict);
 
+                entity.HasIndex(oi => new { oi.OrderId, oi.ProductId })
+                   .IsUnique();
+
+            });
 
         }
 

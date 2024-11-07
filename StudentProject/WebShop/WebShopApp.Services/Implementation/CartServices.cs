@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WebShopApp.DataAccess.Interface;
+﻿using WebShopApp.DataAccess.Interface;
 using WebShopApp.Domain.Models;
 using WebShopApp.DTOs.Cart;
-using WebShopApp.DTOs.Product;
 using WebShopApp.Mappers;
 using WebShopApp.Services.Interface;
 
@@ -80,6 +74,13 @@ namespace WebShopApp.Services.Implementation
         {
             var carts = _cartRepository.GetAll();
             return carts.Select(cart => cart.ToCartDto()).ToList();
+        }
+
+        public async Task<Cart> GetById(int cartId)
+        {
+          var cart = await _cartRepository.GetCartByIdAsync(cartId);
+            return cart;
+
         }
 
         public async Task<CartDto> GetUserCart(int userId)

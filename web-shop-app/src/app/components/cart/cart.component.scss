@@ -1,0 +1,56 @@
+h2 {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    img {
+      max-width: 50px;
+    }
+  }
+  
+  .cart-total {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wrapper{
+    margin: auto;
+    width: 80%;
+  }
+  /* Styles for the card container */
+.card-container {
+  display: flex;             
+  justify-content: center;   
+  align-items: center;       
+  height: 100vh;          
+}
+
+/* Styles for the mat-card */
+mat-card {
+  margin: auto;             
+  height: 250px;           
+  width: 70%;               
+  background-color: #ddd;  
+}
+
+/* Center text within the card */
+mat-card-title {
+  font-size: 30px;        
+  text-align: center;      
+  line-height: 250px;      
+}
+
+
+mat-card-content {
+  text-align: center;       
+}

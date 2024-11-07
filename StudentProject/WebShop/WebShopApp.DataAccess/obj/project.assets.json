@@ -1203,6 +1203,21 @@
         "runtime": {
           "bin/placeholder/WebShopApp.Domain.dll": {}
         }
+      },
+      "WebShopApp.DTOs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.15",
+          "Newtonsoft.Json": "13.0.3",
+          "WebShopApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebShopApp.DTOs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebShopApp.DTOs.dll": {}
+        }
       }
     }
   },
@@ -3598,6 +3613,11 @@
       "type": "project",
       "path": "../WebShopApp.Domain/WebShopApp.Domain.csproj",
       "msbuildProject": "../WebShopApp.Domain/WebShopApp.Domain.csproj"
+    },
+    "WebShopApp.DTOs/1.0.0": {
+      "type": "project",
+      "path": "../WebShopApp.DTOs/WebShopApp.DTOs.csproj",
+      "msbuildProject": "../WebShopApp.DTOs/WebShopApp.DTOs.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3608,6 +3628,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.10",
       "Newtonsoft.Json >= 13.0.3",
+      "WebShopApp.DTOs >= 1.0.0",
       "WebShopApp.Domain >= 1.0.0"
     ]
   },
@@ -3617,11 +3638,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj",
       "projectName": "WebShopApp.DataAccess",
-      "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj",
+      "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj",
       "packagesPath": "C:\\Users\\neboj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\neboj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3639,8 +3660,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj"
+            "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj"
+            },
+            "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DTOs\\WebShopApp.DTOs.csproj": {
+              "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DTOs\\WebShopApp.DTOs.csproj"
             }
           }
         }

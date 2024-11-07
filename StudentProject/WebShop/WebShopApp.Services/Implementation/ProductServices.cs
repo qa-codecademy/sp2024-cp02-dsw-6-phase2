@@ -81,7 +81,7 @@ namespace WebShopApp.Services.Implementation
             }
 
             // Convert DTO to Product entity
-            Product newProduct = addProductDto.ToProduct();
+            Productt newProduct = addProductDto.ToProduct();
 
             // Save image asynchronously and update the product's SavedImagePath
             var savedImagePath = await SaveImageFromUrlAsync(addProductDto.OriginalImagePath);
@@ -99,7 +99,7 @@ namespace WebShopApp.Services.Implementation
 
         public void DeleteProduct(int id)
         {
-            Product productDb = _productRepository.GetById(id);
+            Productt productDb = _productRepository.GetById(id);
             if (productDb == null)
             {
                 throw new Exception($"Product with product id {id} not found");
@@ -109,19 +109,19 @@ namespace WebShopApp.Services.Implementation
 
         public List<ProductDto> FilterProducts(int? category, string? brand)
         {
-            List<Product>  products = _productRepository.FilterProducts(category, brand);
+            List<Productt>  products = _productRepository.FilterProducts(category, brand);
             List<ProductDto> productDtos = products.Select(x => x.ToProductDto()).ToList();
             return productDtos;
         }
 
-        public ProductDto GetProductById(int id)
+        public Productt GetProductById(int id)
         {
-            Product productDb = _productRepository.GetById(id);
+            Productt productDb = _productRepository.GetById(id);
             if(productDb == null)
             {
                 throw new Exception($"Product with product id {id} not found");
             }
-            return productDb.ToProductDto();
+            return productDb;
         }
 
         public List<ProductDto> GetProducts()
@@ -132,7 +132,7 @@ namespace WebShopApp.Services.Implementation
 
         public async Task UpdateProduct(UpdateProductDto updateProductDto)
         {
-            Product productDb = _productRepository.GetById(updateProductDto.Id);
+            Productt productDb = _productRepository.GetById(updateProductDto.Id);
             if(productDb == null)
             {
                 throw new Exception($"Product doesnt exists");

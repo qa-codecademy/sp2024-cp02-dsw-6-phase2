@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebShopApp.Domain.Models;
 using WebShopApp.DTOs.Product;
 
 namespace WebShopApp.Services.Interface
@@ -10,7 +11,7 @@ namespace WebShopApp.Services.Interface
     public interface IProductService
     {
         List<ProductDto> GetProducts();
-        ProductDto GetProductById(int id);
+        Productt GetProductById(int id);
 
         Task AddProductAsync(AddProductDto addProductDto);
 

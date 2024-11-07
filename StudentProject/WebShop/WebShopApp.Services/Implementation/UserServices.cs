@@ -24,7 +24,7 @@ namespace WebShopApp.Services.Implementation
 
         public void DeleteUsert(int id)
         {
-            User userDb = _userRepository.GetById(id);
+            Userr userDb = _userRepository.GetById(id);
             if (userDb == null)
             {
                 throw new Exception("User not found");
@@ -40,7 +40,7 @@ namespace WebShopApp.Services.Implementation
 
         public UserDto GetUserById(int id)
         {
-            User userDb = _userRepository.GetById(id);
+            Userr userDb = _userRepository.GetById(id);
             if (userDb == null)
             {
                 throw new Exception("User not found");
@@ -58,7 +58,7 @@ namespace WebShopApp.Services.Implementation
             return usersDb.Select(x => x.ToUserDto()).ToList();
         }
 
-        public string Login(LoginUserDto loginUserDto)
+        public LoginResponse Login(LoginUserDto loginUserDto)
         {
             if (loginUserDto == null)
             {
@@ -74,7 +74,7 @@ namespace WebShopApp.Services.Implementation
             string hash = GennerateHash(loginUserDto.Password);
             //we send the hash passwod cuz that is saved in the db and what we need to comapre
 
-            User userDb = _userRepository.GetUserByUserNameAndPassword(loginUserDto.UserName, hash);
+            Userr userDb = _userRepository.GetUserByUserNameAndPassword(loginUserDto.UserName, hash);
 
             if (userDb == null)
             {
@@ -102,6 +102,7 @@ namespace WebShopApp.Services.Implementation
                     {
                         new Claim("userFullName" , userDb.Name + ' ' + userDb.LastName),
                         new Claim(ClaimTypes.NameIdentifier, userDb.UserName),
+                        new Claim("userId", userDb.Id.ToString()),
                         new Claim(ClaimTypes.Role , userDb.Role.ToString())
                     }
                     )
@@ -116,7 +117,13 @@ namespace WebShopApp.Services.Implementation
             ///converet to string 
 
             string resultToken = jwtSecurityTokenHandler.WriteToken(token);
-            return resultToken;
+
+            return new LoginResponse
+            {
+                Token = resultToken,
+                ValidTo =token.ValidTo
+            };
+
 
         }
 
@@ -146,7 +153,7 @@ namespace WebShopApp.Services.Implementation
             }
 
 
-            User userDb = _userRepository.GetUserByUserName(registerUserDto.UserName);
+            Userr userDb = _userRepository.GetUserByUserName(registerUserDto.UserName);
             if (userDb != null)
             {
                 throw new DataException($"Username {registerUserDto.UserName} is already in use");
@@ -155,7 +162,7 @@ namespace WebShopApp.Services.Implementation
 
 
             string hash = GennerateHash(registerUserDto.Password);
-            User newUser = registerUserDto.ToUser(hash);
+            Userr newUser = registerUserDto.ToUser(hash);
             await _userRepository.Add(newUser);
 
 
@@ -164,7 +171,7 @@ namespace WebShopApp.Services.Implementation
 
         public void UpdateUser(UpdateUserDto updateUserDto)
         {
-            User userDb = _userRepository.GetById(updateUserDto.Id);
+            Userr userDb = _userRepository.GetById(updateUserDto.Id);
             if(userDb == null)
             {
                 throw new Exception("User not found");

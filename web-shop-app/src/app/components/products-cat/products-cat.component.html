@@ -1,0 +1,9 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let category of categories" (click)="navigateToCategory(category.name)">
+      <div class="category-tile">
+        <img [src]="category.imgSrc" alt="{{ category.displayName }} image" class="category-image" />
+        <h2>{{ category.displayName }}</h2>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  

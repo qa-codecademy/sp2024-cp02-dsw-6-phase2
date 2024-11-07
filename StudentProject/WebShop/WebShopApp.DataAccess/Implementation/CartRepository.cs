@@ -1,9 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WebShopApp.DataAccess.Interface;
 using WebShopApp.Domain.Models;
 
@@ -26,6 +21,7 @@ namespace WebShopApp.DataAccess.Implementation
         public async Task AddProductToCartAsync(int cartId, int productId, int quantity)
         {
             var cart = await _dbContext.Carts
+                .Include(x => x.User)
             .Include(c => c.CartItems)
             .ThenInclude(ci => ci.Product)
             .FirstOrDefaultAsync(c => c.Id == cartId);
@@ -89,7 +85,13 @@ namespace WebShopApp.DataAccess.Implementation
 
         public Cart GetById(int id)
         {
-            return _dbContext.Carts.Include(c => c.CartItems).ThenInclude(c => c.Product).FirstOrDefault(x => x.Id == id);
+            return _dbContext.Carts.Include(x => x.User).Include(c => c.CartItems).ThenInclude(c => c.Product).FirstOrDefault(x => x.Id == id);
+        }
+
+        public async Task<Cart> GetCartByIdAsync(int cartId)
+        {
+           return  _dbContext.Carts.Include(x => x.User).Include(c => c.CartItems).ThenInclude(c => c.Product).FirstOrDefault(x => x.Id == cartId);
+
         }
 
         public async Task RemoveProductFromCartAsync(int cartId, int productId)

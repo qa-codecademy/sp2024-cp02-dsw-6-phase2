@@ -31,7 +31,7 @@ namespace WebShopApp.Domain.Models
         public List<User> Users { get; set; }
 
 
-        public List<Order> Orders { get; set; }
+        public List<Orderr> Orders { get; set; }
 
     }
 }

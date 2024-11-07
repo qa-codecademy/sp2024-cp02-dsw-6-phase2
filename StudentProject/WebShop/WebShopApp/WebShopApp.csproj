@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Mailjet.Api" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
       <PrivateAssets>all</PrivateAssets>
@@ -17,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EmailServices\EmailServices.csproj" />
     <ProjectReference Include="..\WebShopApp.DTOs\WebShopApp.DTOs.csproj" />
     <ProjectReference Include="..\WebShopApp.Helpers\WebShopApp.Helpers.csproj" />
     <ProjectReference Include="..\WebShopApp.Services\WebShopApp.Services.csproj" />

@@ -3349,11 +3349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Mappers\\WebShopApp.Mappers.csproj",
+      "projectUniqueName": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Mappers\\WebShopApp.Mappers.csproj",
       "projectName": "WebShopApp.Mappers",
-      "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Mappers\\WebShopApp.Mappers.csproj",
+      "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Mappers\\WebShopApp.Mappers.csproj",
       "packagesPath": "C:\\Users\\neboj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Mappers\\obj\\",
+      "outputPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Mappers\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\neboj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3371,11 +3371,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj"
+            "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj"
             },
-            "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DTOs\\WebShopApp.DTOs.csproj": {
-              "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DTOs\\WebShopApp.DTOs.csproj"
+            "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DTOs\\WebShopApp.DTOs.csproj": {
+              "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DTOs\\WebShopApp.DTOs.csproj"
             }
           }
         }

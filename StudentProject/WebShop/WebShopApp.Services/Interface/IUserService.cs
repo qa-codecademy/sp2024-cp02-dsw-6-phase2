@@ -14,7 +14,7 @@ namespace WebShopApp.Services.Interface
         UserDto GetUserById(int id);
 
         Task RegisterUser(RegisterUserDto registerUserDto);
-        string Login(LoginUserDto loginUserDto);
+        LoginResponse Login(LoginUserDto loginUserDto);
 
         void UpdateUser(UpdateUserDto updateUserDto);
         void DeleteUsert(int id);

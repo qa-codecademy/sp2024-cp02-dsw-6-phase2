@@ -1,0 +1,23 @@
+.logo {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+// Media Query for Responsive Toolbar
+@media (max-width: 768px) {
+  .example-spacer {
+    display: none; // Hide spacer on smaller screens
+  }
+
+  mat-toolbar {
+    justify-content: space-between; 
+  }
+}

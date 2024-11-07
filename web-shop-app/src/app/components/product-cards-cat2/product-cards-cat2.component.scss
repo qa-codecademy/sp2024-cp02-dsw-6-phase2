@@ -1,0 +1,27 @@
+mat-grid-list {
+    gap: 16px;
+    padding:18px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+
+  }
+  button{
+    padding: 5px;
+    margin: 10px;
+  }
+
+
+  @media (max-width: 768px) {
+    mat-grid-list {
+      gap: 12px;
+      padding: 6px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    mat-grid-list {
+      gap: 8px;
+      padding: 4px;
+    }
+  }
+  

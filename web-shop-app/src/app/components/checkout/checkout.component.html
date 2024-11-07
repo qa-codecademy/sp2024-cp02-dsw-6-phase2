@@ -1,0 +1,100 @@
+<div class="wrapper">
+    <div class="container">
+      <form *ngIf="checkoutForm" [formGroup]="checkoutForm">
+        <div class="form-section">
+          <!-- User Information Section -->
+          <div class="user-info">
+            <h3>User Information</h3>
+  
+            <mat-form-field>
+              <mat-label>First Name</mat-label>
+              <input matInput formControlName="firstName" />
+              <mat-error *ngIf="checkoutForm.get('firstName')?.invalid && checkoutForm.get('firstName')?.touched">
+                First name is required.
+              </mat-error>
+            </mat-form-field>
+  
+            <mat-form-field>
+              <mat-label>Last Name</mat-label>
+              <input matInput formControlName="lastName" />
+              <mat-error *ngIf="checkoutForm.get('lastName')?.invalid && checkoutForm.get('lastName')?.touched">
+                Last name is required.
+              </mat-error>
+            </mat-form-field>
+  
+            <mat-form-field>
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email" />
+              <mat-error *ngIf="checkoutForm.get('email')?.invalid && checkoutForm.get('email')?.touched">
+                Please enter a valid email.
+              </mat-error>
+            </mat-form-field>
+  
+            <mat-form-field>
+              <mat-label>Phone</mat-label>
+              <input matInput formControlName="phone" />
+              <mat-error *ngIf="checkoutForm.get('phone')?.invalid && checkoutForm.get('phone')?.touched">
+                Please enter a valid phone number.
+              </mat-error>
+            </mat-form-field>
+  
+            <mat-form-field>
+              <mat-label>Address</mat-label>
+              <input matInput formControlName="address" />
+              <mat-error *ngIf="checkoutForm.get('address')?.invalid && checkoutForm.get('address')?.touched">
+                Address is required and must be at least 5 characters.
+              </mat-error>
+            </mat-form-field>
+  
+            <mat-form-field>
+              <mat-label>Description</mat-label>
+              <input matInput formControlName="description" />
+              <mat-error *ngIf="checkoutForm.get('description')?.invalid && checkoutForm.get('description')?.touched">
+                Description is required.
+              </mat-error>
+            </mat-form-field>
+          </div>
+  
+          <!-- Payment Information Section -->
+          <div class="payment-info">
+            <h3>Payment Information</h3>
+  
+            <mat-form-field>
+              <mat-label>Card Number</mat-label>
+              <input matInput formControlName="cardNumber" />
+              <mat-error *ngIf="checkoutForm.get('cardNumber')?.invalid && checkoutForm.get('cardNumber')?.touched">
+                Please enter a valid 16-digit card number.
+              </mat-error>
+            </mat-form-field>
+
+
+
+            <mat-form-field>
+                <mat-label>Expiry Date</mat-label>
+                <input matInput [matDatepicker]="dp" formControlName="expiryDate" [placeholder]="'MM/YYYY'">
+                <mat-hint>MM/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="dp"></mat-datepicker-toggle>
+                <mat-datepicker #dp startView="multi-year" panelClass="example-month-picker">
+                </mat-datepicker>
+                <mat-error *ngIf="checkoutForm.get('expiryDate')?.invalid && checkoutForm.get('expiryDate')?.touched">
+                  Please enter a valid expiry date (MM/YY).
+                </mat-error>
+              </mat-form-field>
+
+              
+  
+            <mat-form-field>
+              <mat-label>CVV</mat-label>
+              <input matInput formControlName="cvv" />
+              <mat-error *ngIf="checkoutForm.get('cvv')?.invalid && checkoutForm.get('cvv')?.touched">
+                Please enter a valid 3-digit CVV.
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+  
+        <button mat-raised-button color="primary" [disabled]="checkoutForm.invalid" type="submit">Make an Order</button>
+      </form>
+    </div>
+  </div>
+  

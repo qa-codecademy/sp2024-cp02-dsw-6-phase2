@@ -35,7 +35,6 @@ namespace WebShopApp.Controllers
         }
 
         [AllowAnonymous]
-
         [HttpGet]
         public ActionResult<List<ProductDto>> GetProducts()
         {

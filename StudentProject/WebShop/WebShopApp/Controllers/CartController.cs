@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebShopApp.Domain.Models;
 using WebShopApp.DTOs.Cart;
+using WebShopApp.Mappers;
 using WebShopApp.Services.Interface;
 
 namespace WebShopApp.Controllers
@@ -17,13 +18,14 @@ namespace WebShopApp.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<CartDto>> GetUserCart(int userId)
+        public async Task<ActionResult<Cart>> GetUserCart( int userId)
         {
             try
             {
 
                 var cartFromUser = await _cartServices.GetUserCart(userId);
-                return Ok(cartFromUser);
+                var cart= cartFromUser.ToCart();
+                return Ok(cart);
 
 
 
@@ -39,12 +41,12 @@ namespace WebShopApp.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> AddProductToCart(int userId, int productId, int quantity)
+        public async Task<IActionResult> AddProductToCart([FromQuery] int userId, int productId, int quantity)
         {
             try
             {
                  await _cartServices.AddProductToCart(userId, productId, quantity);
-                return Ok("Product added");
+                return Ok(new { message = "Product added to cart successfully." });
 
 
 
@@ -59,7 +61,7 @@ namespace WebShopApp.Controllers
 
 
         [HttpDelete]
-        public async Task<ActionResult> DeleteProductFromCart(int userId, int productId)
+        public async Task<ActionResult> DeleteProductFromCart( int userId, int productId)
         {
             try
             {

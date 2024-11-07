@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace WebShopApp.Domain.Models
 {
@@ -16,7 +17,8 @@ namespace WebShopApp.Domain.Models
         public int Id { get; set; }
 
         public int UserId { get; set; }
-        public User User { get; set; }
+        [JsonIgnore]
+        public Userr User { get; set; }
 
         // A collection of CartItems which will track products and their quantities
         public List<CartItem> CartItems { get; set; }

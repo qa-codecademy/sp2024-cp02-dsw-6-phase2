@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using WebShopApp.Domain.Enums.UserEnum;
 
 namespace WebShopApp.Domain.Models
@@ -18,8 +19,8 @@ namespace WebShopApp.Domain.Models
         public string Phone { get; set; }
         public string Password { get; set; }
 
-
-        public List<Order> Orders { get; set; }
+        
+          public List<Orderr> Orders { get; set; }
         public List<Product> Products { get; set; }
         public Cart Cart { get; set; } 
 

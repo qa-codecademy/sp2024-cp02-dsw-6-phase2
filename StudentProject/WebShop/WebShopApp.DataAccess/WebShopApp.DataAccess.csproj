@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebShopApp.Domain\WebShopApp.Domain.csproj" />
+    <ProjectReference Include="..\WebShopApp.DTOs\WebShopApp.DTOs.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,9 +10,9 @@ namespace WebShopApp.Mappers
 {
     public static class ProductMapper
     {
-        public static Product ToProduct(this AddProductDto addProductDto)
+        public static Productt ToProduct(this AddProductDto addProductDto)
         {
-            return new Product
+            return new Productt
             {
                 ProductName = addProductDto.ProductName,
                 ProductDescription = addProductDto.ProductDescription,
@@ -28,10 +28,11 @@ namespace WebShopApp.Mappers
             };
         }
 
-        public static ProductDto ToProductDto(this Product product)
+        public static ProductDto ToProductDto(this Productt product)
         {
             return new ProductDto
             {
+                Id = product.Id,
                 ProductName= product.ProductName,
                 ProductDescription= product.ProductDescription,
                 Price = product.Price,
@@ -39,6 +40,8 @@ namespace WebShopApp.Mappers
                 QuantityAvailable= product.QuantityAvailable,
                 ShippingTime= product.ShippingTime,
                 OriginalImagePath= product.OriginalImagePath,
+                ShippingCost=product.ShippingCost,
+                Discount=product.Discount
                 
 
             };

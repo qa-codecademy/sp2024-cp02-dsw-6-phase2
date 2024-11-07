@@ -1,0 +1,54 @@
+<mat-toolbar>
+  <button mat-button routerLink="/">
+    <mat-icon>shopping_basket</mat-icon>
+  </button>
+  <span class="logo" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    WebShop App
+  </span>
+
+  <span class="example-spacer"></span>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="isSmallScreen">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <ng-container *ngIf="isLoggedIn()">
+      <button mat-menu-item routerLink="/products" routerLinkActive="active">Products</button>
+      <button mat-menu-item routerLink="/sale" routerLinkActive="active">Sales</button>
+      <button mat-menu-item routerLink="/cart">
+        <mat-icon>shopping_cart</mat-icon> Cart
+      </button>
+      <button mat-menu-item routerLink="/previous-orders" routerLinkActive="active">My Orders</button>
+      <button mat-menu-item (click)="onLogout()">Logout</button>
+    </ng-container>
+
+    <ng-container *ngIf="!isLoggedIn()">
+      <button mat-menu-item routerLink="/products" routerLinkActive="active">Products</button>
+      <button mat-menu-item routerLink="/sale" routerLinkActive="active">Sales</button>
+      <button mat-menu-item routerLink="/login" routerLinkActive="active">Login</button>
+      <button mat-menu-item routerLink="/register" routerLinkActive="active">Register</button>
+    </ng-container>
+  </mat-menu>
+
+  <ng-container *ngIf="!isSmallScreen">
+    <ng-container *ngIf="isLoggedIn()">
+      <a mat-button routerLink="/products" routerLinkActive="active">Products</a>
+      <a mat-button routerLink="/sale" routerLinkActive="active">Sales</a>
+      <button mat-button routerLink="/cart">
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+      <a mat-button routerLink="/previous-orders" routerLinkActive="active">My Orders</a>
+      <span class="example-spacer"></span>
+      <a mat-button (click)="onLogout()">Logout</a>
+    </ng-container>
+
+    <ng-container *ngIf="!isLoggedIn()">
+      <a mat-button routerLink="/products" routerLinkActive="active">Products</a>
+      <a mat-button routerLink="/sale" routerLinkActive="active">Sales</a>
+      <span class="example-spacer"></span>
+      <a mat-button routerLink="/login" routerLinkActive="active">Login</a>
+      <a mat-button routerLink="/register" routerLinkActive="active">Register</a>
+    </ng-container>
+  </ng-container>
+</mat-toolbar>

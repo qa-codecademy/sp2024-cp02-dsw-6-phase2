@@ -1,0 +1,10 @@
+<button mat-fab extended>
+    <mat-icon>favorite</mat-icon>
+    All of our products that are dicounted.
+  </button>
+  <mat-grid-list [cols]="breakPoint" rowHeight="700" (window:resize)="onResize($event)">
+    <mat-grid-tile *ngFor="let productFromParent of products; trackBy: trackByProduct">
+      <app-product-card [product]="productFromParent"></app-product-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  

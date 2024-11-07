@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShopApp", "WebShopApp\WebShopApp.csproj", "{7DF6507C-5098-459B-9E72-9E3D3C50D34C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShopApp", "WebShopApp\WebShopApp.csproj", "{7DF6507C-5098-459B-9E72-9E3D3C50D34C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShopApp.DataAccess", "WebShopApp.DataAccess\WebShopApp.DataAccess.csproj", "{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShopApp.DataAccess", "WebShopApp.DataAccess\WebShopApp.DataAccess.csproj", "{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShopApp.Domain", "WebShopApp.Domain\WebShopApp.Domain.csproj", "{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShopApp.Domain", "WebShopApp.Domain\WebShopApp.Domain.csproj", "{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShopApp.Helpers", "WebShopApp.Helpers\WebShopApp.Helpers.csproj", "{19817E04-392E-4722-8381-8FB9DFE5779A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShopApp.Helpers", "WebShopApp.Helpers\WebShopApp.Helpers.csproj", "{19817E04-392E-4722-8381-8FB9DFE5779A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShopApp.Services", "WebShopApp.Services\WebShopApp.Services.csproj", "{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShopApp.Services", "WebShopApp.Services\WebShopApp.Services.csproj", "{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShopApp.DTOs", "WebShopApp.DTOs\WebShopApp.DTOs.csproj", "{3F9FD0D2-6B00-441A-A0CD-46B28D58563D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShopApp.DTOs", "WebShopApp.DTOs\WebShopApp.DTOs.csproj", "{3F9FD0D2-6B00-441A-A0CD-46B28D58563D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShopApp.Mappers", "WebShopApp.Mappers\WebShopApp.Mappers.csproj", "{6966C904-DC43-487A-956E-0A3A0D29F783}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShopApp.Mappers", "WebShopApp.Mappers\WebShopApp.Mappers.csproj", "{6966C904-DC43-487A-956E-0A3A0D29F783}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShopApp.Shared", "WebShopApp.Shared\WebShopApp.Shared.csproj", "{31A27501-87A9-45FA-9C94-08E7A68FF26E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShopApp.Shared", "WebShopApp.Shared\WebShopApp.Shared.csproj", "{31A27501-87A9-45FA-9C94-08E7A68FF26E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

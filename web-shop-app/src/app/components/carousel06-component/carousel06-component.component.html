@@ -1,0 +1,23 @@
+<div class="carousel-container">
+    <button mat-icon-button (click)="scrollLeft()" aria-label="Scroll Left">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+  
+    <div class="carousel-items" #carousel>
+      <mat-card *ngFor="let product of products" class="carousel-card">
+        <ng-container *ngIf="product.originalImagePath; ">
+          <img mat-card-image [src]="product.originalImagePath" [alt]="product.productName" />
+        </ng-container>
+        
+        <mat-card-title>{{ product.productName }}</mat-card-title>
+        <mat-card-content>
+          <p>  {{ product.price | currency:'MKD ' }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  
+    <button mat-icon-button (click)="scrollRight()" aria-label="Scroll Right">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+  

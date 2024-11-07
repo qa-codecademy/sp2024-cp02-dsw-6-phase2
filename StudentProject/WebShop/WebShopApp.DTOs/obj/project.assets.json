@@ -3328,11 +3328,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DTOs\\WebShopApp.DTOs.csproj",
+      "projectUniqueName": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DTOs\\WebShopApp.DTOs.csproj",
       "projectName": "WebShopApp.DTOs",
-      "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DTOs\\WebShopApp.DTOs.csproj",
+      "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DTOs\\WebShopApp.DTOs.csproj",
       "packagesPath": "C:\\Users\\neboj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.DTOs\\obj\\",
+      "outputPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DTOs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\neboj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3350,8 +3350,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj"
+            "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\WebShopApp.Domain.csproj"
             }
           }
         }

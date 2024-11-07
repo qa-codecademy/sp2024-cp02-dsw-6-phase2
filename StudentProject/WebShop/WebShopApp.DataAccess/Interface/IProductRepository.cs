@@ -7,10 +7,10 @@ using WebShopApp.Domain.Models;
 
 namespace WebShopApp.DataAccess.Interface
 {
-    public interface IProductRepository :IRepository<Product>
+    public interface IProductRepository :IRepository<Productt>
     {
 
-        List<Product> FilterProducts(int? category, string? brand);
+        List<Productt> FilterProducts(int? category, string? brand);
 
     }
 }

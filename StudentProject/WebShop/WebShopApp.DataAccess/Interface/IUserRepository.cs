@@ -7,10 +7,10 @@ using WebShopApp.Domain.Models;
 
 namespace WebShopApp.DataAccess.Interface
 {
-    public interface IUserRepository :IRepository<User>
+    public interface IUserRepository :IRepository<Userr>
     {
-        User GetUserByUserName(string userName);
-        User GetUserByUserNameAndPassword(string userName, string password);
+        Userr GetUserByUserName(string userName);
+        Userr GetUserByUserNameAndPassword(string userName, string password);
 
 
     }

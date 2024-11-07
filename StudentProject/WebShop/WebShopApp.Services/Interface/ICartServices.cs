@@ -14,6 +14,7 @@ namespace WebShopApp.Services.Interface
         Task RemoveProductFromCart(int userId, int productId);
         Task ClearCart(int userId);
         void DeleteCart (int userId);
+        Task<Cart> GetById (int cartId);
        
 
     }

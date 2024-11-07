@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Mg54VmkHN4=",
+  "dgSpecHash": "V4PLbGYWivg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Shared\\WebShopApp.Shared.csproj",
+  "projectFilePath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Shared\\WebShopApp.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\neboj\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.15\\microsoft.aspnetcore.authentication.jwtbearer.6.0.15.nupkg.sha512",
     "C:\\Users\\neboj\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

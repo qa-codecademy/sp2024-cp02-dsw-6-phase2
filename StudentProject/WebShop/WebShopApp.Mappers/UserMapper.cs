@@ -10,9 +10,9 @@ namespace WebShopApp.Mappers
 {
     public static class UserMapper
     {
-        public static User ToUser(this RegisterUserDto registerUserDto , string hash)
+        public static Userr ToUser(this RegisterUserDto registerUserDto , string hash)
         {
-            return new User
+            return new Userr
             {
                 Name = registerUserDto.Name,
                 LastName = registerUserDto.LastName,
@@ -27,10 +27,11 @@ namespace WebShopApp.Mappers
 
 
 
-        public static UserDto ToUserDto(this User user)
+        public static UserDto ToUserDto(this Userr user)
         {
             return new UserDto
             {
+                Id = user.Id,
               Name= user.Name,
               LastName= user.LastName,
               Address = user.Address,

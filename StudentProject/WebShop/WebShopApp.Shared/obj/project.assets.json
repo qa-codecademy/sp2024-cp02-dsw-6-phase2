@@ -464,11 +464,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Shared\\WebShopApp.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Shared\\WebShopApp.Shared.csproj",
       "projectName": "WebShopApp.Shared",
-      "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Shared\\WebShopApp.Shared.csproj",
+      "projectPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Shared\\WebShopApp.Shared.csproj",
       "packagesPath": "C:\\Users\\neboj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Shared\\obj\\",
+      "outputPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\neboj\\AppData\\Roaming\\NuGet\\NuGet.Config",

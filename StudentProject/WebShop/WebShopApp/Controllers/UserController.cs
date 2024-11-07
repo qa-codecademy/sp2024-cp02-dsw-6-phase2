@@ -50,12 +50,12 @@ namespace WebShopApp.Controllers
         [AllowAnonymous] //client doesnt need to provide a  token
         [HttpPost("login")]
 
-        public ActionResult<string> Login([FromBody] LoginUserDto loginUserDto)
+        public ActionResult<LoginResponse> Login([FromBody] LoginUserDto loginUserDto)
         {
 
             try
             {
-                string token = _userService.Login(loginUserDto);
+                var token = _userService.Login(loginUserDto);
                 return Ok(token);
 
 

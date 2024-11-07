@@ -16,9 +16,21 @@ namespace WebShopApp.Mappers
             {
                 UserId = cart.UserId,
                CartItems = cart.CartItems,
-               TotalPrice= cart.TotalAmount
+               TotalPrice= cart.TotalAmount,
+               Id = cart.Id,
             };
 
+        }
+
+        public static Cart ToCart(this CartDto cartDto)
+        {
+            return new Cart
+            {
+                UserId= cartDto.UserId,
+                CartItems= cartDto.CartItems,
+                Id = cartDto.Id,
+                TotalAmount= cartDto.TotalPrice
+            };
         }
     }
 }

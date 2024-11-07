@@ -22,36 +22,6 @@ namespace WebShopApp.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("OrderProduct", b =>
-                {
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.HasKey("OrderId", "ProductId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("OrderProduct");
-                });
-
-            modelBuilder.Entity("ProductUser", b =>
-                {
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProductId", "UserId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("ProductUser");
-                });
-
             modelBuilder.Entity("WebShopApp.Domain.Models.Cart", b =>
                 {
                     b.Property<int>("Id")
@@ -103,7 +73,39 @@ namespace WebShopApp.DataAccess.Migrations
                     b.ToTable("CartItem");
                 });
 
-            modelBuilder.Entity("WebShopApp.Domain.Models.Order", b =>
+            modelBuilder.Entity("WebShopApp.Domain.Models.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("OrderrId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderrId");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("OrderId", "ProductId")
+                        .IsUnique();
+
+                    b.ToTable("OrderItems");
+                });
+
+            modelBuilder.Entity("WebShopApp.Domain.Models.Orderr", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -115,7 +117,9 @@ namespace WebShopApp.DataAccess.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<decimal>("TotalAmount")
-                        .HasColumnType("decimal(18,2)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("decimal(18,2)")
+                        .HasDefaultValue(0.00m);
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -127,7 +131,7 @@ namespace WebShopApp.DataAccess.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("WebShopApp.Domain.Models.Product", b =>
+            modelBuilder.Entity("WebShopApp.Domain.Models.Productt", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -178,12 +182,17 @@ namespace WebShopApp.DataAccess.Migrations
                     b.Property<int>("ShippingTime")
                         .HasColumnType("int");
 
+                    b.Property<int?>("UserrId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserrId");
 
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("WebShopApp.Domain.Models.User", b =>
+            modelBuilder.Entity("WebShopApp.Domain.Models.Userr", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -238,39 +247,9 @@ namespace WebShopApp.DataAccess.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("OrderProduct", b =>
-                {
-                    b.HasOne("WebShopApp.Domain.Models.Order", null)
-                        .WithMany()
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("WebShopApp.Domain.Models.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ProductUser", b =>
-                {
-                    b.HasOne("WebShopApp.Domain.Models.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("WebShopApp.Domain.Models.User", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("WebShopApp.Domain.Models.Cart", b =>
                 {
-                    b.HasOne("WebShopApp.Domain.Models.User", "User")
+                    b.HasOne("WebShopApp.Domain.Models.Userr", "User")
                         .WithOne("Cart")
                         .HasForeignKey("WebShopApp.Domain.Models.Cart", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -287,7 +266,7 @@ namespace WebShopApp.DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WebShopApp.Domain.Models.Product", "Product")
+                    b.HasOne("WebShopApp.Domain.Models.Productt", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -298,9 +277,24 @@ namespace WebShopApp.DataAccess.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("WebShopApp.Domain.Models.Order", b =>
+            modelBuilder.Entity("WebShopApp.Domain.Models.OrderItem", b =>
                 {
-                    b.HasOne("WebShopApp.Domain.Models.User", "User")
+                    b.HasOne("WebShopApp.Domain.Models.Orderr", null)
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderrId");
+
+                    b.HasOne("WebShopApp.Domain.Models.Productt", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("WebShopApp.Domain.Models.Orderr", b =>
+                {
+                    b.HasOne("WebShopApp.Domain.Models.Userr", "User")
                         .WithMany("Orders")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -309,17 +303,31 @@ namespace WebShopApp.DataAccess.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("WebShopApp.Domain.Models.Productt", b =>
+                {
+                    b.HasOne("WebShopApp.Domain.Models.Userr", null)
+                        .WithMany("Products")
+                        .HasForeignKey("UserrId");
+                });
+
             modelBuilder.Entity("WebShopApp.Domain.Models.Cart", b =>
                 {
                     b.Navigation("CartItems");
                 });
 
-            modelBuilder.Entity("WebShopApp.Domain.Models.User", b =>
+            modelBuilder.Entity("WebShopApp.Domain.Models.Orderr", b =>
+                {
+                    b.Navigation("OrderItems");
+                });
+
+            modelBuilder.Entity("WebShopApp.Domain.Models.Userr", b =>
                 {
                     b.Navigation("Cart")
                         .IsRequired();
 
                     b.Navigation("Orders");
+
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

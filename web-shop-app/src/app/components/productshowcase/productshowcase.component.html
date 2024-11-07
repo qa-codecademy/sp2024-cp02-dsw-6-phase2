@@ -1,0 +1,31 @@
+<div *ngIf="product" class="product-showcase">
+  <div class="product-image">
+    <img [src]="product.originalImagePath" alt="{{ product.productName }}" />
+    <div *ngIf="product.discount > 0" class="badge">-{{ product.discount }}% Discounted</div>
+    <img class="logo" src="https://example.com/lg-logo.png" alt="Brand Logo" />
+  </div>
+
+  <div class="product-details">
+    <h2>{{ product.productName }}</h2>
+    <p>Code: {{ product.id }}</p>
+    <ul>
+      <li>{{ product.productDescription }}</li>
+    </ul>
+    <a href="#">Specification</a>
+    
+    
+  </div>
+
+  <div class="price-section">
+    <div *ngIf="product.discount > 0" class="discount-price">
+      <span>Discounted price</span>
+      <span class="price">{{ discountedPrice }} MKD</span>
+    </div>
+    <div class="regular-price" [class.line-through]="product.discount > 0">
+      Regular price: {{ product.price }} MKD
+    </div>
+    <div class="add-to-cart">
+      <button class="add-button" (click)="addToCart()">Add to cart</button>
+    </div>
+  </div>
+</div>

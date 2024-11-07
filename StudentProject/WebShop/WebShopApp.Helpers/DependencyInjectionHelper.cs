@@ -26,7 +26,9 @@ namespace WebShopApp.Helpers
         {
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IUserRepository, UserRepository>();
-            services.AddTransient<ICartRepository, CartRepository>();   
+            services.AddTransient<ICartRepository, CartRepository>();  
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            
            
 
         }
@@ -36,6 +38,8 @@ namespace WebShopApp.Helpers
             services.AddTransient<IProductService, ProductServices>();
             services.AddTransient<IUserService, UserServices>();
             services.AddTransient<ICartServices , CartServices>();
+            services.AddTransient<IOrderService, OrderServices>();
+            services.AddTransient<MailjetService>();
         }
 
 

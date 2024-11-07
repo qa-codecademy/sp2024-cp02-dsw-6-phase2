@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\",
+  "WorkspaceRootPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.services\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|solutionrelative:webshopapp.services\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.domain\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|solutionrelative:webshopapp.domain\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|c:\\users\\neboj\\onedrive\\desktop\\studentproject\\webshop\\webshopapp.services\\webshopapp.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|solutionrelative:webshopapp.services\\webshopapp.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.domain\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|solutionrelative:webshopapp.domain\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.domain\\models\\userr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|solutionrelative:webshopapp.domain\\models\\userr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.domain\\models\\orderr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|solutionrelative:webshopapp.domain\\models\\orderr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Userr.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\Userr.cs",
+              "RelativeDocumentMoniker": "WebShopApp.Domain\\Models\\Userr.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\Userr.cs",
+              "RelativeToolTip": "WebShopApp.Domain\\Models\\Userr.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T22:38:30.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Orderr.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\Orderr.cs",
+              "RelativeDocumentMoniker": "WebShopApp.Domain\\Models\\Orderr.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\Orderr.cs*",
+              "RelativeToolTip": "WebShopApp.Domain\\Models\\Orderr.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T22:38:18.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WebShopApp.Services",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\WebShopApp.Services.csproj",
-              "RelativeDocumentMoniker": "WebShopApp.Services\\WebShopApp.Services.csproj",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\WebShopApp.Services.csproj",
-              "RelativeToolTip": "WebShopApp.Services\\WebShopApp.Services.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-20T11:00:05.504Z",
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "WebShopApp.Domain\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\Cart.cs*",
+              "RelativeToolTip": "WebShopApp.Domain\\Models\\Cart.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T22:38:02.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IOrderService.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\Interface\\IOrderService.cs",
-              "RelativeDocumentMoniker": "WebShopApp.Services\\Interface\\IOrderService.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\StudentProject\\WebShop\\WebShopApp.Services\\Interface\\IOrderService.cs*",
-              "RelativeToolTip": "WebShopApp.Services\\Interface\\IOrderService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "WebShopApp.Domain\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\CartItem.cs",
+              "RelativeToolTip": "WebShopApp.Domain\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T10:58:41.681Z",
+              "WhenOpened": "2024-11-06T22:38:08.177Z",
               "EditorCaption": ""
             }
           ]

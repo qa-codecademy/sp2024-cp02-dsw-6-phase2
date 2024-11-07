@@ -2,16 +2,23 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 using WebShopApp.Helpers;
+using WebShopApp.Domain.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 
-
-
-
+// Configure JSON Serializer options
+ //builder.Services.AddControllers()
+ //  .AddJsonOptions(options =>
+ //  {
+ //      options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+ //       options.JsonSerializerOptions.MaxDepth = 10; // Optional, if needed, increase max depth
+ //   });
 
 
 var appSettings = builder.Configuration.GetSection("DbSettings");
@@ -24,6 +31,14 @@ DependencyInjectionHelper.InjectDbContext(builder.Services, connectionString);
 DependencyInjectionHelper.InjectRepository(builder.Services);
 DependencyInjectionHelper.InjectServices(builder.Services);
 
+// Add CORS services
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularApp", policy =>
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod());
+});
 
 
 builder.Services.AddControllers();
@@ -99,12 +114,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("AllowAngularApp");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+
 
 app.Run();

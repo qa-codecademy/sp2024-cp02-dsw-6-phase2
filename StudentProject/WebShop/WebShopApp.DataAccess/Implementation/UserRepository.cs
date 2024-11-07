@@ -21,19 +21,19 @@ namespace WebShopApp.DataAccess.Implementation
        
 
 
-        public async Task Add(User entity)
+        public async Task Add(Userr entity)
         {
             _dbContext.Users.Add(entity);
            await  _dbContext.SaveChangesAsync();   
         }
 
-        public void Delete(User entity)
+        public void Delete(Userr entity)
         {
             _dbContext.Users.Remove(entity);
             _dbContext.SaveChanges();
         }
 
-        public List<User> GetAll()
+        public List<Userr> GetAll()
         {
             return _dbContext.Users
                 .Include(x => x.Orders)
@@ -41,24 +41,24 @@ namespace WebShopApp.DataAccess.Implementation
                 .ToList();
         }
 
-        public User GetById(int id)
+        public Userr GetById(int id)
         {
             return _dbContext.Users.Include(x => x.Cart).Include(x => x.Orders).FirstOrDefault(x => x.Id == id);
         }
 
-        public User GetUserByUserName(string userName)
+        public Userr GetUserByUserName(string userName)
         {
             return _dbContext.Users.FirstOrDefault(x => x.UserName == userName);
 
         }
 
-        public User GetUserByUserNameAndPassword(string userName, string password)
+        public Userr GetUserByUserNameAndPassword(string userName, string password)
         {
             return _dbContext.Users.FirstOrDefault(x => x.UserName.ToLower() == userName.ToLower() && x.Password == password);
 
         }
 
-        public async Task Update(User entity)
+        public async Task Update(Userr entity)
         {
             _dbContext.Update(entity);
             _dbContext.SaveChanges();

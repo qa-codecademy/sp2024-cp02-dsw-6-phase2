@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebShopApp.Domain.Models;
+using WebShopApp.DTOs.Order;
 
 namespace WebShopApp.DataAccess.Interface
 {
-    public interface IOrderRepository :IRepository<Order>
+    public interface IOrderRepository :IRepository<Orderr>
     {
         Task AddProductToOrderAsync(int orderId, int productId, int quantity);
-        Task RemoveProductFromOrderAsync(int orderId, int productId);
-        Task CreateOrderFromCartAsync(Cart cart);
+        Task<Orderr> CreateOrderFromCartAsync(Cart cart);
     }
 }

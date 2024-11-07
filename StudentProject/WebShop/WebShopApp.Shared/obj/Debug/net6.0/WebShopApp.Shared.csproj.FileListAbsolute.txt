@@ -10,3 +10,16 @@ C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Shared\obj\Deb
 C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\refint\WebShopApp.Shared.dll
 C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\WebShopApp.Shared.pdb
 C:\Users\neboj\OneDrive\Desktop\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\ref\WebShopApp.Shared.dll
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\bin\Debug\net6.0\WebShopApp.Shared.deps.json
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\bin\Debug\net6.0\WebShopApp.Shared.dll
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\bin\Debug\net6.0\WebShopApp.Shared.pdb
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\WebShopApp.Shared.csproj.AssemblyReference.cache
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\WebShopApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\WebShopApp.Shared.AssemblyInfoInputs.cache
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\WebShopApp.Shared.AssemblyInfo.cs
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\WebShopApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\WebShopApp.Shared.sourcelink.json
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\WebShopApp.Shared.dll
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\refint\WebShopApp.Shared.dll
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\WebShopApp.Shared.pdb
+C:\Users\neboj\OneDrive\Desktop\sp2024-cp02-dsw-6-phase2\StudentProject\WebShop\WebShopApp.Shared\obj\Debug\net6.0\ref\WebShopApp.Shared.dll
