@@ -35,11 +35,14 @@ namespace WebShopApp.Mappers
         {
             return new OrderDto
             {
+                Id = order.Id,
                 OrderDate = order.OrderDate,
+                Address= order.Address, 
                 TotalAmount = order.TotalAmount,
                 OrderItems = order.OrderItems,
                 UserId = order.UserId,
                 User = order.User,
+                
 
                 
             };

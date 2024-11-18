@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map, Observable } from 'rxjs';
+import { BehaviorSubject, map, Observable, tap } from 'rxjs';
 import { Cart } from '../types/interfaces/cart.interface';
 import { apiUrl, snackBarConfig } from '../constants/app.constants';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class CartService {
-
+  private cartSubject = new BehaviorSubject<Cart | null>(null); // Initialize with null or the actual cart data
+  cart$ = this.cartSubject.asObservable();
   constructor(private http: HttpClient,
     private snackBar: MatSnackBar,
     private router:Router
@@ -42,24 +43,22 @@ export class CartService {
       snackBarConfig
     );
     this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-      this.router.navigate(['/cart']); 
+     
     });
     
     return this.http.delete<void>(`${apiUrl}/Cart/clearCart?userId=${userId}`);
   }
 
   removeProductFromCart(userId: number, productId: number): Observable<void> {
-    this.snackBar.open(
-      'Product removed successfully',
-      'Close',
-      snackBarConfig
+    this.snackBar.open('Product removed successfully', 'Close', snackBarConfig);
+
+    return this.http.delete<void>(`${apiUrl}/Cart?userId=${userId}&productId=${productId}`).pipe(
+      tap(() => {
+        // After successful removal, update the cart data
+        this.getUserCart(userId); // Refetch the cart or update the state accordingly
+        
+      })
     );
-    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-      this.router.navigate(['/cart']); 
-    });
-    
-    return this.http.delete<void>(`${apiUrl}/Cart?userId=${userId}&productId=${productId}`);
-    
   }
  
 }

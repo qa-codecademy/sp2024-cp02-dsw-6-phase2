@@ -1,0 +1,56 @@
+<!-- orders.component.html -->
+
+<!-- Loading Spinner -->
+<div *ngIf="isLoading" class="loading-spinner">
+    <mat-spinner></mat-spinner>
+    <p>Loading orders...</p>
+  </div>
+  
+  <!-- No Orders Message -->
+  <div *ngIf="!isLoading && orders.length === 0" class="no-orders">
+    <p>No orders available.</p>
+  </div>
+  
+  <!-- Orders Table -->
+  <div *ngIf="!isLoading && orders.length > 0" class="table-container">
+    <mat-table [dataSource]="orders">
+  
+      <!-- Order ID Column -->
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef> Order ID </mat-header-cell>
+        <mat-cell *matCellDef="let order"> {{ order.id }} </mat-cell>
+      </ng-container>
+  
+      <!-- Order Date Column -->
+      <ng-container matColumnDef="orderDate">
+        <mat-header-cell *matHeaderCellDef> Order Date </mat-header-cell>
+        <mat-cell *matCellDef="let order"> {{ order.orderDate | date: 'shortDate' }} </mat-cell>
+      </ng-container>
+  
+      <!-- Address Column -->
+      <ng-container matColumnDef="address">
+        <mat-header-cell *matHeaderCellDef> Address </mat-header-cell>
+        <mat-cell *matCellDef="let order"> {{ order.address }} </mat-cell>
+      </ng-container>
+  
+      <!-- Total Amount Column -->
+      <ng-container matColumnDef="totalAmount">
+        <mat-header-cell *matHeaderCellDef> Total Amount </mat-header-cell>
+        <mat-cell *matCellDef="let order"> {{ order.totalAmount | currency }} </mat-cell>
+      </ng-container>
+
+       <!-- View Details Column -->
+       <ng-container matColumnDef="viewDetails">
+        <mat-header-cell *matHeaderCellDef> Details </mat-header-cell>
+        <mat-cell *matCellDef="let order">
+          <button mat-button (click)="viewOrderDetails(order.id)">View Details</button>
+        </mat-cell>
+      </ng-container>
+  
+      <!-- Header and Row -->
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  
+    </mat-table>
+  </div>
+  

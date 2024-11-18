@@ -8,6 +8,7 @@
 
   <span class="example-spacer"></span>
 
+  <!-- Menu button appears only on small screens -->
   <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="isSmallScreen">
     <mat-icon>menu</mat-icon>
   </button>
@@ -19,8 +20,9 @@
       <button mat-menu-item routerLink="/cart">
         <mat-icon>shopping_cart</mat-icon> Cart
       </button>
-      <button mat-menu-item routerLink="/previous-orders" routerLinkActive="active">My Orders</button>
+      <button mat-menu-item routerLink="/myorders" routerLinkActive="active">My Orders</button>
       <button mat-menu-item (click)="onLogout()">Logout</button>
+      <a mat-button  routerLink="/admin-panel" routerLinkActive="active">Manage</a>
     </ng-container>
 
     <ng-container *ngIf="!isLoggedIn()">
@@ -31,6 +33,7 @@
     </ng-container>
   </mat-menu>
 
+  <!-- Navigation links for larger screens -->
   <ng-container *ngIf="!isSmallScreen">
     <ng-container *ngIf="isLoggedIn()">
       <a mat-button routerLink="/products" routerLinkActive="active">Products</a>
@@ -38,9 +41,12 @@
       <button mat-button routerLink="/cart">
         <mat-icon>shopping_cart</mat-icon>
       </button>
-      <a mat-button routerLink="/previous-orders" routerLinkActive="active">My Orders</a>
+      <a mat-button routerLink="/myorders" routerLinkActive="active">My Orders</a>
+
       <span class="example-spacer"></span>
+
       <a mat-button (click)="onLogout()">Logout</a>
+      <a mat-button routerLink="/admin-panel" routerLinkActive="active">Manage</a>
     </ng-container>
 
     <ng-container *ngIf="!isLoggedIn()">

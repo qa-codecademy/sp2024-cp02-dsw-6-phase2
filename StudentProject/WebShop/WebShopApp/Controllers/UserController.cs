@@ -34,7 +34,7 @@ namespace WebShopApp.Controllers
             {
 
                 await _userService.RegisterUser(registerUserDto);
-                return StatusCode(StatusCodes.Status201Created, "User rgisterd");
+                return StatusCode(StatusCodes.Status201Created, new { message = "User registered" });
 
 
 
@@ -177,7 +177,7 @@ namespace WebShopApp.Controllers
 
                
                 _userService.DeleteUsert(id);
-                return Ok("User deleted");
+                return Ok(new { message = "User Deleted" });
 
 
             }

@@ -39,3 +39,8 @@ button[mat-icon-button]:hover {
   transition: transform 0.3s ease-in-out;
   text-align: center;
 }
+@media (max-width: 450px) {
+ .carousel-container{
+  display: none;
+ }
+}

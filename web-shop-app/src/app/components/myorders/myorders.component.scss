@@ -1,0 +1,30 @@
+
+.table-container {
+    width: 70%; /* Make the container take up 70% of the screen */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+  }
+  
+
+  .table-container mat-table {
+    margin: 0 auto; /* Center the table within the container */
+    width: 100%; /* Make the table fill the container */
+  }
+  
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+  }
+  
+  .no-orders {
+    text-align: center;
+  }
+  @media (max-width: 450px) {
+    .table-container{
+      width: 90%
+    }
+   }

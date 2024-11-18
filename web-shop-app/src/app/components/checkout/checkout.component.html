@@ -70,17 +70,17 @@
 
 
             <mat-form-field>
-                <mat-label>Expiry Date</mat-label>
-                <input matInput [matDatepicker]="dp" formControlName="expiryDate" [placeholder]="'MM/YYYY'">
-                <mat-hint>MM/YYYY</mat-hint>
-                <mat-datepicker-toggle matIconSuffix [for]="dp"></mat-datepicker-toggle>
-                <mat-datepicker #dp startView="multi-year" panelClass="example-month-picker">
-                </mat-datepicker>
-                <mat-error *ngIf="checkoutForm.get('expiryDate')?.invalid && checkoutForm.get('expiryDate')?.touched">
-                  Please enter a valid expiry date (MM/YY).
-                </mat-error>
-              </mat-form-field>
-
+              <mat-label>Expiry Date</mat-label>
+              <input matInput formControlName="expiryDate" placeholder="MM/YY">
+              <mat-hint>MM/YY</mat-hint>
+              <mat-error *ngIf="checkoutForm.get('expiryDate')?.hasError('invalidDate') && checkoutForm.get('expiryDate')?.touched">
+                Please enter a valid expiry date in MM/YY format.
+              </mat-error>
+              <mat-error *ngIf="checkoutForm.get('expiryDate')?.hasError('expiredDate') && checkoutForm.get('expiryDate')?.touched">
+                Expiry date must be in the future.
+              </mat-error>
+            </mat-form-field>
+            
               
   
             <mat-form-field>
@@ -93,7 +93,7 @@
           </div>
         </div>
   
-        <button mat-raised-button color="primary" [disabled]="checkoutForm.invalid" type="submit">Make an Order</button>
+        <button mat-raised-button color="primary" [disabled]="checkoutForm.invalid" type="submit" (click)="onSubmitOrder()">Make an Order</button>
       </form>
     </div>
   </div>

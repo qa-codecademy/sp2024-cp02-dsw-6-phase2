@@ -4,6 +4,7 @@ using WebShopApp.DTOs.OrderDtos;
 using WebShopApp.DataAccess.Interface;
 using WebShopApp.Mappers;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 
 
@@ -87,21 +88,24 @@ namespace WebShopApp.Services.Implementation
             return order;
         }
 
-        public  List<OrderDto> GetOrders(bool isOrderForUser)
+        public  List<OrderDto> GetOrders(bool isOrderForUser, int? userId = null)
         {
             var orders = new List<Orderr>();
-            if(isOrderForUser)
-                orders =  _orderRepository.GetAll();
-           
-            var ordersDto = new List<OrderDto>();
-            foreach (var order in orders)
+            if (isOrderForUser && userId.HasValue)
             {
-                var orderDto = order.ToOrderDto();
-                ordersDto.Add(orderDto);
-
+                // Fetch orders only for the specified user ID
+                orders = _orderRepository.GetOrdersByUserId(userId.Value);
             }
-            return ordersDto;
+            else
+            {
+                // Fetch all orders
+                orders = _orderRepository.GetAll();
+            }
 
+            // Map the orders to DTOs
+            var ordersDto = orders.Select(order => order.ToOrderDto()).ToList();
+
+            return ordersDto;
 
 
         }
@@ -132,6 +136,20 @@ namespace WebShopApp.Services.Implementation
             await _orderRepository.AddProductToOrderAsync(orderId, productId, quantity);
 
 
+
+        }
+
+        public List<OrderDto> GetAllOrders()
+        {
+            var orders = new List<Orderr>();
+
+          
+                orders = _orderRepository.GetAll();
+            
+
+            var ordersDto = orders.Select(order => order.ToOrderDto()).ToList();
+
+            return ordersDto;
 
         }
     }

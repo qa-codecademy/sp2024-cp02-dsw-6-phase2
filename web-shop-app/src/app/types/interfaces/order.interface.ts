@@ -1,10 +1,17 @@
 export interface Order {
     id: number;
     orderDate: string;
+    address:string;
     userId: number;
     user: User;
     orderItems: OrderItem[];
     totalAmount: number;
+  }
+  
+  export interface OrderResponse {
+    success: boolean;
+    orderId?: number;
+    errors?: string[];
   }
   
   export interface OrderItem {

@@ -23,7 +23,7 @@ namespace WebShopApp.Controllers
             {
 
                 await _productService.AddProductAsync(addProductDto);
-                return StatusCode(StatusCodes.Status201Created, "Product created");
+                return StatusCode(StatusCodes.Status201Created, new { message = "Product Addded" });
 
 
 

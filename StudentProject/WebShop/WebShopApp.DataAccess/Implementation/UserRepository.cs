@@ -24,7 +24,14 @@ namespace WebShopApp.DataAccess.Implementation
         public async Task Add(Userr entity)
         {
             _dbContext.Users.Add(entity);
-           await  _dbContext.SaveChangesAsync();   
+            try
+            {
+                await _dbContext.SaveChangesAsync();
+            }
+            catch (DbUpdateException ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.InnerException?.Message}");
+            }
         }
 
         public void Delete(Userr entity)

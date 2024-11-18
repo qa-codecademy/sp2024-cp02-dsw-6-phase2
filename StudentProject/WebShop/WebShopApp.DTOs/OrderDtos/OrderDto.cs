@@ -9,7 +9,9 @@ namespace WebShopApp.DTOs.OrderDtos
 {
     public class OrderDto
     {
+        public int Id {  get; set; }    
         public DateTime OrderDate { get; set; }
+        public string Address { get; set; }
 
         // Foreign Key for User
         public int UserId { get; set; }

@@ -1,0 +1,94 @@
+
+<div class="wrapper">
+    <form [formGroup]="registerForm">
+      <h1>Register</h1>
+  
+
+ <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input type="text" matInput placeholder="Enter Name..." formControlName="name"/>
+      </mat-form-field>
+      @if (hasNameRequiredError) {
+        <mat-error>
+          Name is required
+        </mat-error>
+      }
+      <mat-form-field>
+        <mat-label>Lastname</mat-label>
+        <input type="text" matInput placeholder="Enter lastname..." formControlName="lastname"/>
+      </mat-form-field>
+      @if (hasLNameRequiredError) {
+        <mat-error>
+          Lastname is required
+        </mat-error>
+      }
+
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input type="text" matInput placeholder="Enter Username..." formControlName="username"/>
+      </mat-form-field>
+      @if (hasUNameRequiredError) {
+        <mat-error>
+          Username is required
+        </mat-error>
+      }
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input type="text" matInput placeholder="Enter address..." formControlName="address"/>
+      </mat-form-field>
+      @if (hasAddressRequiredErro) {
+        <mat-error>
+          Address is required
+        </mat-error>
+      }
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input type="text" matInput placeholder="Enter email..." formControlName="email"/>
+      </mat-form-field>
+      @if (hasEmailRequiredErro) {
+        <mat-error>
+          Email is required
+        </mat-error>
+      }
+      <mat-form-field>
+        <mat-label>Phone</mat-label>
+        <input type="text" matInput placeholder="Enter phone..." formControlName="phone"/>
+      </mat-form-field>
+      @if (hasPhoneRequiredErro) {
+        <mat-error>
+          Phone is required
+        </mat-error>
+      }
+
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input [type]="hidePassword ? 'password' : 'text'"  matInput placeholder="Enter password..." formControlName="password"/>
+        <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword">
+          <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+      </mat-form-field>
+      @if (hasPasswordRequiredError) {
+        <mat-error>
+          Password is required
+        </mat-error>
+      }
+
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input [type]="hidePassword ? 'password' : 'text'"  matInput placeholder="Confirm password..." formControlName="confirmPassword"/>
+        <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword">
+          <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+      </mat-form-field>
+      @if (hasCPasswordRequiredError) {
+        <mat-error>
+          Password is required
+        </mat-error>
+      }
+  
+  
+      <button [disabled]="registerForm.invalid" mat-raised-button color="primary" (click)="onRegister()">Register</button>
+  
+    </form>
+  </div>

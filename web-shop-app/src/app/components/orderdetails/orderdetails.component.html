@@ -1,0 +1,38 @@
+<div *ngIf="isLoading" class="loading-spinner">
+  <mat-spinner></mat-spinner>
+  <p>Loading order details...</p>
+</div>
+
+<div *ngIf="!isLoading && order" class="order-details">
+  <h2>Order #{{ order.id }} Details</h2>
+
+  <div class="order-info">
+    <div>
+      <strong>Order Date:</strong> {{ order.orderDate | date: 'short' }}
+    </div>
+
+    <div>
+      <strong>Shipping Address:</strong> {{ order.address }}
+    </div>
+
+    <div>
+      <strong>Total Amount:</strong> {{ order.totalAmount | currency }}
+    </div>
+  </div>
+
+  <h3>Products:</h3>
+  <mat-list>
+    <mat-list-item *ngFor="let item of order.orderItems">
+      <div class="product-details">
+        <strong>{{ item.product.brand }}</strong> - 
+        {{ item.quantity }} x {{ item.product.price | currency:"MKD " }}
+      </div>
+    </mat-list-item>
+  </mat-list>
+
+  <button mat-raised-button color="primary" (click)="goBack()">Back to Orders</button>
+</div>
+
+<div *ngIf="!isLoading && errorMessage" class="error-message">
+  <p>{{ errorMessage }}</p>
+</div>

@@ -54,3 +54,46 @@ mat-card-title {
 mat-card-content {
   text-align: center;       
 }
+
+
+@media (max-width: 450px) {
+
+  .wrapper {
+    padding: 10px;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+  }
+
+  table th, table td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  table td {
+    margin-bottom: 10px;
+  }
+
+  table td img {
+    max-width: 80px; /* Make images smaller for small screens */
+  }
+
+  .cart-total {
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-total button {
+    width: 100%; /* Full width buttons */
+  }
+  thead{
+    display: none;
+  }
+  .cart-total{
+    font-size: small;
+  }
+
+  }

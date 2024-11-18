@@ -1,0 +1,148 @@
+.admin-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 70%; /* 70% of the screen width */
+    margin: 0 auto; /* Centers the panel horizontally */
+    background-color: #f9f9f9;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  
+  .section {
+    margin-top: 20px;
+    width: 100%; /* Take up the full width of the parent */
+  }
+  
+  .add-product-card {
+    width: 100%;
+    max-width: 600px; /* Ensures card doesn't stretch too much */
+    margin: 0 auto;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center the button vertically within the li */
+    margin-bottom: 15px; /* Add gap between list items */
+    position: relative; /* Allow absolute positioning of the button */
+    padding: 10px 0; /* Add padding to give space inside each li */
+  }
+  
+  li button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px; /* Space from the bottom */
+  }
+  
+  /* Ensure the button is centered vertically within the li */
+  li .buttonOnSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .admin-panel {
+      width: 90%; /* Reduce width for smaller screens */
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .buttonOnSide {
+      /* Ensure buttons are centered when viewed on small screens */
+      text-align: center;
+    }
+  
+    .section {
+      width: 100%;
+    }
+  
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Center content and button vertically */
+      margin-bottom: 15px; /* Gap between items */
+      position: relative; /* Allow for button positioning */
+    }
+  
+    li button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: auto;
+      margin-bottom: 10px; /* Adjust margin if needed */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .admin-panel {
+      width: 100%; /* Full width on very small screens */
+      padding: 10px;
+    }
+  
+    .add-product-card {
+      max-width: 100%;
+    }
+  
+    .buttonOnSide {
+      text-align: center;
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    ul {
+      padding-left: 10px;
+    }
+  
+    li {
+      position: relative; /* Ensure the button can be positioned at the bottom */
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Vertically center content */
+      margin-bottom: 15px; /* Gap between items */
+    }
+  
+    li button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%; /* Make the button take up the full width of the li */
+      text-align: center;
+    }
+  }
+  

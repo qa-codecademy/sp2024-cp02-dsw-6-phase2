@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace WebShopApp.Domain.Models
 {
@@ -12,6 +13,8 @@ namespace WebShopApp.Domain.Models
 
         public int OrderId { get; set; }
 
+        [JsonIgnore]
+        public Orderr Order { get; set; }
         public int ProductId { get; set; }
         public Productt Product { get; set; }
 

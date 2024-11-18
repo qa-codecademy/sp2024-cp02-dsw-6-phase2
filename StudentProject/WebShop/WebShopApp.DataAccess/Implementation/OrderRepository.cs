@@ -83,6 +83,7 @@ namespace WebShopApp.DataAccess.Implementation
         {
             return _dbContext.Orders
                      .Include(x => x.OrderItems)
+                     .ThenInclude(oi => oi.Product)
                      .Include(x => x.User)
                      .FirstOrDefault(x => x.Id == id);
         }
@@ -124,6 +125,7 @@ namespace WebShopApp.DataAccess.Implementation
             var order = new Orderr
             {
                 OrderDate = DateTime.Now,
+                Address= cartDb.User.Address,
                 User = cartDb.User,
                 UserId = cartDb.UserId,
                 OrderItems = new List<OrderItem>(),
@@ -168,6 +170,9 @@ namespace WebShopApp.DataAccess.Implementation
 
         }
 
-
+        public List<Orderr> GetOrdersByUserId(int userId)
+        {
+            return _dbContext.Orders.Where(o => o.UserId == userId).ToList();
+        }
     }
 }

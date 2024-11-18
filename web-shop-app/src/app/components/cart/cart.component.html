@@ -19,15 +19,15 @@
                 <td>{{ item.quantity }}</td>
                 <td>{{ item.product.price * item.quantity | currency: 'MKD ' }}</td> 
                 <td>
-                    <button mat-button color="warn" (click)="removeProduct(item.product.id)">Remove</button>
+                    <button mat-button color="warn" (click)="removeProduct(item.product.id)" >Remove</button>
                 </td>
             </tr>
         </tbody>
     </table>
     <div class="cart-total">
         <h3>Total Amount: {{ cart.totalAmount | currency: 'MKD ' }}</h3> 
-        <button mat-raised-button color="primary" routerLink="/checkout" routerLinkActive="active">Continiu to checkout</button>
-        <button mat-raised-button color="primary" (click)="clearCart()">Clear Cart</button>
+        <button mat-raised-button color="primary" routerLink="/checkout" routerLinkActive="active">Checkout</button>
+        <button mat-raised-button color="primary" (click)="clearCart()">Clear</button>
     </div>
 </div>
 

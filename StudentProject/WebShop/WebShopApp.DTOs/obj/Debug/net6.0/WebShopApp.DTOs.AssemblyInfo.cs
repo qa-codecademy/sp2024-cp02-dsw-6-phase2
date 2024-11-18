@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebShopApp.DTOs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b7d91fb406034b68f05c7ddca8f5dc9ce71256a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b639a70397123d8e1b1f49a4f2a721fef677d411")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebShopApp.DTOs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebShopApp.DTOs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

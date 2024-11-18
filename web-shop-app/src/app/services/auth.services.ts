@@ -61,25 +61,36 @@ export class UserService {
 
   // Register a new user
   register(registerUserDto: RegisterUserDto): Observable<any> {
-    return this.http.post(`${apiUrl}/User/register` , registerUserDto)
-    .pipe(
-      tap(() => {
-        this.snackBar.open(
-          'You have succsesfuly registerd',
-          'Close',
-          snackBarConfig
-        )
-        this.router.navigate(['/login']);
-      }),
-      catchError((error)=> {
-        this.snackBar.open(error?.error?.errors?.[0] || `error while registering`,
-          'Close',
-          snackBarConfig
-        );
-        return of();
-      })
-    )
+    return this.http.post(`${apiUrl}/User/register`, registerUserDto)
+      .pipe(
+        tap({
+          next: () => {
+            this.snackBar.open(
+              'You have successfully registered',
+              'Close',
+              snackBarConfig
+            );
+            this.router.navigate(['/login']);
+          },
+          error: (error) => {
+            // Log the error if needed
+            console.error('Error on registration:', error);
+          }
+        }),
+        catchError((error) => {
+          // Use the backend error message if available
+          const errorMessage = error?.error || 'Error while registering';
+          this.snackBar.open(
+            errorMessage,
+            'Close',
+            snackBarConfig
+          );
+          return of();
+        })
+      );
   }
+  
+  
 
   // Update a user
   updateUser(updateUserDto: UpdateUserDto): Observable<void> {
@@ -88,7 +99,7 @@ export class UserService {
 
   // Delete a user
   deleteUser(id: number): Observable<void> {
-    return this.http.delete<void>(`${apiUrl}/${id}`);
+    return this.http.delete<void>(`${apiUrl}/User/deleteUser?id=${id}`);
   }
 
   // User login

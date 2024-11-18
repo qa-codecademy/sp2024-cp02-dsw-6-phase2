@@ -12,5 +12,6 @@ namespace WebShopApp.DataAccess.Interface
     {
         Task AddProductToOrderAsync(int orderId, int productId, int quantity);
         Task<Orderr> CreateOrderFromCartAsync(Cart cart);
+        List<Orderr> GetOrdersByUserId(int userId);
     }
 }

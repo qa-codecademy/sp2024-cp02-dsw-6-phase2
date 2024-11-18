@@ -10,6 +10,7 @@ namespace WebShopApp.Domain.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public DateTime OrderDate { get; set; }
+        public string Address { get; set; }
 
         // Foreign Key for User
         public int UserId { get; set; }

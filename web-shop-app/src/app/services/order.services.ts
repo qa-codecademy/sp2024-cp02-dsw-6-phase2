@@ -1,7 +1,7 @@
 import { Injectable, signal } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { catchError, Observable, of, tap } from 'rxjs';
-import { Order, OrderItem, Product } from '../types/interfaces/order.interface';
+import { Order, OrderItem, Product ,OrderResponse} from '../types/interfaces/order.interface';
 import { apiUrl, snackBarConfig } from '../constants/app.constants';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -32,7 +32,7 @@ export class OrderService {
   getOrderForUser(isOrderForUser: boolean): Observable<Order[]> {
     const params = new HttpParams().set('isOrderForUser', isOrderForUser.toString());
 
-    return this.http.get<Order[]>(`${apiUrl}/Order`, { params }).pipe(
+    return this.http.get<Order[]>(`${apiUrl}/Order/GetOrders?isOrderForUser=${isOrderForUser}`, { params }).pipe(
       tap((response: any) => {
         if (response && response.user && response.user.username) {
           this.currentUser.set(response.user.username);
@@ -50,14 +50,16 @@ export class OrderService {
   }
 
   
-  submitOrderFromCart(cartId: number): Observable<void> {
-    return this.http.post<void>(`${apiUrl}/Order/CeateOrderFromCart?cartId=${cartId}`, {}).pipe(
-      tap(() => {
-        this.snackBar.open(
-          'Order created successfully!',
-          'Close',
-          snackBarConfig
-        );
+  submitOrderFromCart(cartId: number): Observable<OrderResponse> {
+    return this.http.post<OrderResponse>(`${apiUrl}/Order/CeateOrderFromCart?cartId=${cartId}`, {}).pipe(
+      tap((response) => {
+        if (response?.success) {
+          this.snackBar.open(
+            'Order created successfully!',
+            'Close',
+            snackBarConfig
+          );
+        }
       }),
       catchError((error) => {
         this.snackBar.open(
@@ -74,7 +76,7 @@ export class OrderService {
 
   // Fetch a specific order by its ID
   getOrderById(orderId: number): Observable<Order> {
-    return this.http.get<Order>(`${apiUrl}/Order/${orderId}`).pipe(
+    return this.http.get<Order>(`${apiUrl}/Order/GetOrderById?id=${orderId}`).pipe(
       catchError((error) => {
         this.snackBar.open(
           'Error fetching order details!',
@@ -88,7 +90,7 @@ export class OrderService {
 
   // Fetch all orders
   getAllOrders(): Observable<Order[]> {
-    return this.http.get<Order[]>(`${apiUrl}/Order/all`).pipe(
+    return this.http.get<Order[]>(`${apiUrl}/Order`).pipe(
       catchError((error) => {
         this.snackBar.open(
           'Error fetching all orders!',
@@ -99,10 +101,11 @@ export class OrderService {
       })
     );
   }
+ 
 
   // Delete an order by ID
   deleteOrder(orderId: number): Observable<void> {
-    return this.http.delete<void>(`${apiUrl}/Order/${orderId}`).pipe(
+    return this.http.delete<void>(`${apiUrl}/Order/DeleteOrder?id=${orderId}`).pipe(
       tap(() => {
         this.snackBar.open(
           'Order deleted successfully!',

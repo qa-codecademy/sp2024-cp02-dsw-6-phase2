@@ -1,4 +1,4 @@
-import { ProductCategory } from "../enums/product-category-enum"
+import { ProductCategory, ProductCategoryBE } from "../enums/product-category-enum"
 
 export interface Product{
     id:number,
@@ -26,4 +26,17 @@ export interface ProductDto{
     originalImagePath:string
     discount:number
     shippingCost:number
+}
+
+export interface AddProductDto{
+    productName:string
+    productDescription:string
+    price:number
+    category:ProductCategoryBE
+    brand:string
+    quantityAvailable:number
+    shippingCost:number
+    shippingTime:number
+    originalImagePath:string
+    discount?:number
 }

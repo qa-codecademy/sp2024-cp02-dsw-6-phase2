@@ -84,7 +84,7 @@ namespace WebShopApp.DataAccess.Migrations
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("OrderrId")
+                    b.Property<int>("OrderId1")
                         .HasColumnType("int");
 
                     b.Property<int>("ProductId")
@@ -95,7 +95,7 @@ namespace WebShopApp.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderrId");
+                    b.HasIndex("OrderId1");
 
                     b.HasIndex("ProductId");
 
@@ -112,6 +112,11 @@ namespace WebShopApp.DataAccess.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
@@ -280,14 +285,24 @@ namespace WebShopApp.DataAccess.Migrations
             modelBuilder.Entity("WebShopApp.Domain.Models.OrderItem", b =>
                 {
                     b.HasOne("WebShopApp.Domain.Models.Orderr", null)
+                        .WithMany()
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WebShopApp.Domain.Models.Orderr", "Order")
                         .WithMany("OrderItems")
-                        .HasForeignKey("OrderrId");
+                        .HasForeignKey("OrderId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("WebShopApp.Domain.Models.Productt", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("Order");
 
                     b.Navigation("Product");
                 });

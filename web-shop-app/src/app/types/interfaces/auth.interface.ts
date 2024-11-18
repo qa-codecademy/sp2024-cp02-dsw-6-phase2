@@ -3,6 +3,7 @@ import { Order } from "./order.interface";
 
 // user.dto.ts
 export interface UserDto {
+  id:number;
     name: string;
     lastName: string;
     address: string;
@@ -28,10 +29,10 @@ export interface UserDto {
   export interface RegisterUserDto {
     name: string;
     lastName: string;
-    address: string;
     userName: string;
+    address: string;
     email: string;
-    role: UserRole;
+    role: UserRole.USER;
     phone: string;
     password: string;
     confirmPassword: string;

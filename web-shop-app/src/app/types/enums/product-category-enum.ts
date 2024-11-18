@@ -13,7 +13,7 @@ export enum ProductCategory{
 
 
 export enum  ProductCategoryBE{
-    HOBS ,
+    HOBS=1 ,
     DESKTOPPC ,
     OVENS ,
     RANGE ,

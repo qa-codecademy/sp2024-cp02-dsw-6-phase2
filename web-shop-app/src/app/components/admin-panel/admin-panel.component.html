@@ -1,0 +1,141 @@
+<div class="admin-panel">
+    <!-- Section Selector -->
+    <nav>
+      <button mat-button (click)="switchSection('addProduct')">Add Product</button>
+      <button mat-button (click)="switchSection('manageProducts')">Manage Products</button>
+      <button mat-button  (click)="switchSection('manageOrders')">Manage Orders</button>
+      <button mat-button (click)="switchSection('manageUsers')">Manage Users</button>
+    </nav>
+  
+    <!-- Add Product Section -->
+    <div *ngIf="currentSection === 'addProduct'" class="section">
+    <mat-card class="add-product-card">
+        <mat-card-title>Add Product</mat-card-title>
+        <form [formGroup]="productForm" (ngSubmit)="submitForm()">
+          <mat-form-field appearance="fill">
+            <mat-label>Product Name</mat-label>
+            <input matInput formControlName="productname" />
+            <mat-error *ngIf="productForm.get('productname')?.hasError('required')">Product name is required</mat-error>
+            <mat-error *ngIf="productForm.get('productname')?.hasError('minlength')">
+              Product name must be at least 3 characters
+            </mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="fill">
+            <mat-label>Product Description</mat-label>
+            <textarea matInput formControlName="productdescription"></textarea>
+            <mat-error *ngIf="productForm.get('productdescription')?.hasError('required')">
+              Product description is required
+            </mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="fill">
+            <mat-label>Price</mat-label>
+            <input matInput type="number" formControlName="price" />
+            <mat-error *ngIf="productForm.get('price')?.hasError('required')">Price is required</mat-error>
+            <mat-error *ngIf="productForm.get('price')?.hasError('min')">Price must be greater than 0</mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="fill">
+            <mat-label>Product Category</mat-label>
+            <mat-select formControlName="category">
+              <mat-option *ngFor="let category of productCategories" [value]="category">{{ category }}</mat-option>
+            </mat-select>
+            <mat-error *ngIf="productForm.get('productcategory')?.hasError('required')">
+              Product category is required
+            </mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="fill">
+            <mat-label>Brand</mat-label>
+            <input matInput formControlName="brand" />
+            <mat-error *ngIf="productForm.get('brand')?.hasError('required')">Brand is required</mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="fill">
+            <mat-label>Quantity Available</mat-label>
+            <input matInput type="number" formControlName="quantityavailable" />
+            <mat-error *ngIf="productForm.get('quantityavailable')?.hasError('required')">
+              Quantity available is required
+            </mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="fill">
+            <mat-label>Shipping Cost</mat-label>
+            <input matInput type="number" formControlName="shippingcost" />
+            <mat-error *ngIf="productForm.get('shippingcost')?.hasError('required')">Shipping cost is required</mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="fill">
+            <mat-label>Shipping Time (in days)</mat-label>
+            <input matInput type="number" formControlName="shippingtime" />
+            <mat-error *ngIf="productForm.get('shippingtime')?.hasError('required')">Shipping time is required</mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="fill">
+            <mat-label>Image URL</mat-label>
+            <input matInput formControlName="originalimagepath" />
+            <mat-error *ngIf="productForm.get('originalimagepath')?.hasError('required')">Image URL is required</mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="fill">
+            <mat-label>Discount (%)</mat-label>
+            <input matInput type="number" formControlName="discount" />
+            <mat-error *ngIf="productForm.get('discount')?.hasError('min')">Discount must be at least 0%</mat-error>
+            <mat-error *ngIf="productForm.get('discount')?.hasError('max')">Discount must not exceed 100%</mat-error>
+          </mat-form-field>
+      
+          <button mat-raised-button color="primary" type="submit" [disabled]="productForm.invalid">Add Product</button>
+        </form>
+      </mat-card>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Manage Products Section -->
+    <div *ngIf="currentSection === 'manageProducts'" class="section">
+      <h2>Manage Products</h2>
+      <ul>
+        <li *ngFor="let product of products">
+          {{ product.productName }} - {{ product.price }}
+          <button mat-button class="buttonOnSide" (click)="deleteProduct(product.id)">Delete</button>
+          <!-- <button (click)="updateProduct(product)">Update</button> -->
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Manage Orders Section -->
+    <div *ngIf="currentSection === 'manageOrders'" class="section">
+      <h2>Manage Orders</h2>
+      <ul>
+        <li *ngFor="let order of orders">
+          Order #{{ order.id }} - {{ order.totalAmount }}
+          <button mat-button class="buttonOnSide" (click)="deleteOrder(order.id)">Delete</button>
+          
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Manage Users Section -->
+    <div *ngIf="currentSection === 'manageUsers'" class="section">
+      <h2>Manage Users</h2>
+      <ul>
+        <li *ngFor="let user of users">
+          {{ user.userName }} - {{ user.email }}
+          <button mat-button class="buttonOnSide" (click)="deleteUser(user.id)">Delete</button>
+          
+        </li>
+      </ul>
+    </div>
+  </div>
+  

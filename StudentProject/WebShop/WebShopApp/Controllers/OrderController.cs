@@ -127,12 +127,12 @@ namespace WebShopApp.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult>GetAllOrders(bool isOrderForUser = false)
+        public async Task<IActionResult>GetAllOrders()
         {
             try
             {
 
-                var order =  _orderService.GetOrders(isOrderForUser);
+                var order =  _orderService.GetAllOrders();
                 return Ok(order);
 
 
@@ -140,6 +140,74 @@ namespace WebShopApp.Controllers
 
             }
             catch(Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+
+            }
+        }
+
+
+        [HttpGet("GetOrders")]
+        public IActionResult GetOrders(bool isOrderForUser)
+        {
+            int? userId = null;
+
+            if (isOrderForUser)
+            {
+                // Extract the user ID from the claims using "userId" key
+                var userIdClaim = User.FindFirst("userId");
+                if (userIdClaim != null)
+                {
+                    userId = int.Parse(userIdClaim.Value);
+                }
+            }
+
+            var orders = _orderService.GetOrders(isOrderForUser, userId);
+            return Ok(orders);
+        }
+
+
+
+
+
+
+
+        [HttpGet("GetOrderById")]
+        public async Task<IActionResult> GetOrderById(int id)
+        {
+            try
+            {
+
+                var order = _orderService.GetOrderById(id);
+                return Ok(order);
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+
+            }
+        }
+
+
+
+        [HttpDelete("DeleteOrder")]
+        public async Task<IActionResult> DeleteOrderById(int id)
+        {
+            try
+            {
+
+                var order = _orderService.DeleteOrderById(id);  
+                return Ok(order);
+
+
+
+
+            }
+            catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
 
@@ -156,7 +224,7 @@ namespace WebShopApp.Controllers
                 var order = await _orderService.CreateOrderFromCart(cartId); // Await the call
                 Orderr orderOrig = OrderMapper.ToOrderOrig(order);
             
-                return Ok("Order Created");
+                return Ok(new { success = true, orderId = orderOrig.Id });
 
 
             }
@@ -164,7 +232,8 @@ namespace WebShopApp.Controllers
             {
                 // Log or inspect the inner exception
                 var innerException = dbEx.InnerException?.Message ?? dbEx.Message;
-                return StatusCode(StatusCodes.Status500InternalServerError, $"Database Update Error: {innerException}");
+                return BadRequest(new { errors = new[] { "Failed to create order from cart" } });
+              //  return StatusCode(StatusCodes.Status500InternalServerError, $"Database Update Error: {innerException}");
             }
             catch (Exception ex)
             {

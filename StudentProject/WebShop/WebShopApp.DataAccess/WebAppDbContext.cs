@@ -164,18 +164,29 @@ namespace WebShopApp.DataAccess
                 entity.Property(o => o.TotalAmount)
                    .HasColumnType("decimal(18,2)")
                    .HasDefaultValue(0.00m);
+
+                entity.Property(o => o.Address)
+                .HasMaxLength(100);
             });
 
 
             modelBuilder.Entity<OrderItem>(entity =>
             {
+                entity.HasKey(oi => oi.Id);
+
+                // Cascade delete when an Order is deleted
+                entity.HasOne<Orderr>()  // No navigation property is needed in this case
+                    .WithMany()  // Order doesn't have a collection of OrderItems
+                    .HasForeignKey(oi => oi.OrderId)  // The foreign key in OrderItem for Order
+                    .OnDelete(DeleteBehavior.Cascade);  // Cascade delete when Order is deleted
+
                 entity.HasOne(oi => oi.Product)
-                .WithMany()
-                .HasForeignKey(oi => oi.ProductId)
-                .OnDelete(DeleteBehavior.Restrict);
+                    .WithMany()
+                    .HasForeignKey(oi => oi.ProductId)
+                    .OnDelete(DeleteBehavior.Restrict);  // Restrict delete of Product if OrderItem exists
 
                 entity.HasIndex(oi => new { oi.OrderId, oi.ProductId })
-                   .IsUnique();
+                    .IsUnique();
 
             });
 

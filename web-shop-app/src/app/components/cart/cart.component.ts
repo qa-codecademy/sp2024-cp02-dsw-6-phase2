@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Cart } from '../../types/interfaces/cart.interface';
 import { CartService } from '../../services/cart.services';
 import { UserService } from '../../services/auth.services';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { OrderService } from '../../services/order.services';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-cart',
@@ -13,7 +14,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   imports: [CommonModule,
     MatCardModule,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    MatButtonModule
     
   ],
   templateUrl: './cart.component.html',
@@ -21,15 +23,25 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class CartComponent implements OnInit{
   cart: any = { items: [] }; 
+  
   constructor(
     private cartService: CartService,
     private authService: UserService ,
-    private orderService:OrderService
+    private orderService:OrderService,
+    private router :Router,
+    private cdRef:ChangeDetectorRef,
+    
   ) {}
 
   ngOnInit(): void {
+    this.cartService.cart$.subscribe((cart) => {
+      this.cart = cart; 
+    });
     this.loadCart();
   }
+  ngAfterViewChecked(): void {
+    this.cdRef.detectChanges();
+}
 
   loadCart(): void {
     const userId = Number(this.authService.getUserId());
@@ -44,10 +56,11 @@ export class CartComponent implements OnInit{
     );
   }
 
+  
   removeProduct(productId: number): void {
     const userId = this.authService.getUserId();
     this.cartService.removeProductFromCart(userId!, productId).subscribe(() => {
-      setTimeout(() => this.loadCart(), 100);
+      
     });
   }
 
@@ -55,7 +68,9 @@ export class CartComponent implements OnInit{
     const userId =  Number(this.authService.getUserId());
     this.cartService.clearCart(userId!).subscribe(() => {
       this.cart = null;
-      
+      this.router.navigate(['/cart']).then(() => {
+        window.location.reload(); // Force reload of the page
+      });
     });
     
   }

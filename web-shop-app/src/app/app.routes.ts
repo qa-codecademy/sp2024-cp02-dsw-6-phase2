@@ -1,7 +1,11 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { ProductlistComponent } from './components/productlist/productlist.component';
 import { ProductshowcaseComponent } from './components/productshowcase/productshowcase.component';
+import { OrderdetailsComponent } from './components/orderdetails/orderdetails.component';
+import { NgModule } from '@angular/core';
+
+
 
 export const routes: Routes = [
 
@@ -24,7 +28,16 @@ export const routes: Routes = [
     {path: 'checkout',
         loadComponent: () => import('./components/checkout/checkout.component').then((module) => module.CheckoutComponent)
     },
+    {path: 'myorders',
+        loadComponent: () => import('./components/myorders/myorders.component').then((module) => module.MyordersComponent)
+    },
+    { path: 'orderdetails/:id', component: OrderdetailsComponent },
 
-
-
+    {path: 'register',
+        loadComponent: () => import('./components/register/register.component').then((module) => module.RegisterComponent)
+    },
+    {path: 'admin-panel',
+        loadComponent: () => import('./components/admin-panel/admin-panel.component').then((module) => module.AdminPanelComponent)
+    },
 ];
+
