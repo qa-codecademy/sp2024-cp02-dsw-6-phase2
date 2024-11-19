@@ -13,7 +13,6 @@ import { ProductCardComponent } from '../product-card/product-card.component';
   selector: 'app-productlist',
   standalone: true,
   imports: [CommonModule,
-    ProductCardsComponent,
     MatIconModule,
     MatGridListModule,ProductCardComponent
   ],
@@ -39,6 +38,8 @@ breakPoint: number = 3
         this.loadProductsByCategory(this.category); 
       }
     });
+    this.onResize({ target: { innerWidth: window.innerWidth } });
+
   }
 
   loadProductsByCategory(category: number): void { // Accept a number here
@@ -55,7 +56,14 @@ breakPoint: number = 3
 
   onResize(event: any) {
     
-    this.breakPoint = Math.floor(event.target.innerWidth / 320);
+    const width = event.target.innerWidth;
+  if (width < 600) {
+    this.breakPoint = 1; // 1 column on small screens
+  } else if (width < 900) {
+    this.breakPoint = 2; // 2 columns on medium screens
+  } else {
+    this.breakPoint = 3; // 3 columns on large screens
+  }
   }
   
   trackByProduct(index: number, product: ProductDto): any {

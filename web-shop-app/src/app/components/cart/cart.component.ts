@@ -62,6 +62,8 @@ export class CartComponent implements OnInit{
     this.cartService.removeProductFromCart(userId!, productId).subscribe(() => {
       
     });
+    window.location.reload();
+
   }
 
   clearCart(): void {

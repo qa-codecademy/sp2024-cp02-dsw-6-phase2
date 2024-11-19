@@ -25,8 +25,11 @@ import { UserService } from '../../services/auth.services';
 })
 export class HeaderComponent implements OnInit {
   isLoggedIn = computed(() => this.authService.isLoggedIn());
+  isAdmin = computed(() => this.authService.isAdmin());
+
   isMenuOpen = false;
   isSmallScreen = false;
+  userName: string | null = null;
 
   constructor(
     private authService: UserService,
@@ -34,7 +37,8 @@ export class HeaderComponent implements OnInit {
     console.log('Constructor called');
   }
   ngOnInit(): void {
-    this.checkScreenSize();;
+    this.checkScreenSize();
+    this.userName = this.authService.getUserName();
   }
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {

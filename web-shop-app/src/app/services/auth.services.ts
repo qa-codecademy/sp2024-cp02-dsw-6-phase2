@@ -102,6 +102,21 @@ export class UserService {
     return this.http.delete<void>(`${apiUrl}/User/deleteUser?id=${id}`);
   }
 
+
+
+
+  isAdmin(): boolean {
+    const token = this.getToken();
+    if (token) {
+      try {
+        const decodedToken: any = jwtDecode(token);
+        return decodedToken?.role === 'Admin'; 
+      } catch (error) {
+        console.error('Error decoding token:', error);
+      }
+    }
+    return false;
+  }
   // User login
   login(loginUserDto: LoginUserDto): Observable<any> {
     return this.http.post<LoginResponse>(`${apiUrl}/User/login`, loginUserDto).pipe(
@@ -117,7 +132,12 @@ export class UserService {
             snackBarConfig
           )
   
-          this.router.navigate(['/'])
+          this.router.navigate(['/']).then(()=>{
+    window.location.reload();
+
+          })
+    
+
   
       }),
       catchError((error)=> {
@@ -130,12 +150,26 @@ export class UserService {
       })
     )
   }
+  getUserName(): string | null {
+    const token = this.getToken();
+    if (token) {
+      try {
+        const decodedToken: any = jwtDecode(token);
+        return decodedToken?.nameid || null; // Ensure the key matches your token structure
+      } catch (error) {
+        console.error('Error decoding token:', error);
+      }
+    }
+    return null;
+  }
 
   logout(){
     this.isLoggedIn.set(false);
     localStorage.removeItem('token');
   localStorage.removeItem('tokenExpirationDate');
-  this.router.navigate(['/login']);
+  this.router.navigate(['/login']).then(() =>{
+    window.location.reload();
+  });
   }
 
 

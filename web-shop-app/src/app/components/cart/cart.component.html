@@ -19,7 +19,7 @@
                 <td>{{ item.quantity }}</td>
                 <td>{{ item.product.price * item.quantity | currency: 'MKD ' }}</td> 
                 <td>
-                    <button mat-button color="warn" (click)="removeProduct(item.product.id)" >Remove</button>
+                    <button mat-raised-button  (click)="removeProduct(item.product.id)" >Remove</button>
                 </td>
             </tr>
         </tbody>

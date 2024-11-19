@@ -4,7 +4,9 @@
     </button>
   
     <div class="carousel-items" #carousel>
-      <mat-card *ngFor="let product of products" class="carousel-card">
+      <mat-card *ngFor="let product of products" 
+      (click)="openProductShowcase(product.id)" 
+      class="carousel-card">
         <ng-container *ngIf="product.originalImagePath; ">
           <img mat-card-image [src]="product.originalImagePath" [alt]="product.productName" />
         </ng-container>

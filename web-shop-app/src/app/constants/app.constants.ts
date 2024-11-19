@@ -5,6 +5,6 @@ export const apiUrl = 'https://localhost:7036/api';
 
 export const snackBarConfig: MatSnackBarConfig = {
     verticalPosition:'top',
-    horizontalPosition:'end',
-    duration: 3000
+    horizontalPosition:'right',
+    duration: 2000
 }

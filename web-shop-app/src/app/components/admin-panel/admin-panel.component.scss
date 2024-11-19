@@ -7,7 +7,15 @@
     margin: 0 auto; /* Centers the panel horizontally */
     background-color: #f9f9f9;
   }
-  
+  mat-card-title{
+    padding: 20px;
+    margin: auto;
+    color: #f9f9f9;
+  }
+.addButton {
+  margin: auto;
+  display: block; 
+  }
   nav {
     display: flex;
     justify-content: space-around;

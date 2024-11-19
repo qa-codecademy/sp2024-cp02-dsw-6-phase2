@@ -5,23 +5,16 @@ mat-grid-list {
     border-bottom: 1px solid;
 
   }
+  mat-grid-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
 
   button{
     padding: 5px;
     margin: 10px;
   }
-  @media (max-width: 768px) {
-    mat-grid-list {
-      gap: 12px;
-      padding: 6px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    mat-grid-list {
-      gap: 8px;
-      padding: 4px;
-    }
-  }
+
   

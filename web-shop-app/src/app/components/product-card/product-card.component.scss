@@ -1,6 +1,6 @@
 
 mat-card {
-    height: 700px;
+    height: 680px;
     background-color: #f9f9f9; 
     border-radius: 8px;
     padding: 10px;
@@ -20,10 +20,19 @@ mat-card {
 
   .product-image {
     position: relative;
-    width: 40%; 
+    width: 60%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
     
 
-    
+  .product-image img {
+    max-width: 100%; /* Ensures the image scales responsively */
+    max-height: 100%; /* Prevents the image from overflowing */
+    object-fit: contain; /* Ensures the entire image fits within the given area */
+}
 
     .badge {
       position: absolute;
@@ -37,4 +46,4 @@ mat-card {
     }
 
   
-  }
+  

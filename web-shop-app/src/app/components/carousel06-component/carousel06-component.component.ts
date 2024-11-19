@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { Product, ProductDto } from '../../types/interfaces/product.interface';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'carousel-basic-demo',
@@ -32,7 +33,9 @@ export class CarouselComponent implements OnInit, AfterViewInit {
 
   @ViewChild('carousel') carousel!: ElementRef;
 
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService,
+    private router:Router
+  ) {}
 
   ngOnInit() {
     // Fetch products and get only the first 10
@@ -44,6 +47,12 @@ export class CarouselComponent implements OnInit, AfterViewInit {
       })
     ).subscribe();
   }
+
+
+  openProductShowcase(productId: number): void {
+    this.router.navigate(['/product', productId]); // Navigate to the product page with its ID
+  }
+
 
   ngAfterViewInit() {
     // Optional: Center initial position if needed

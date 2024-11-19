@@ -21,9 +21,13 @@
         <mat-icon>shopping_cart</mat-icon> Cart
       </button>
       <button mat-menu-item routerLink="/myorders" routerLinkActive="active">My Orders</button>
+      <button mat-button> {{userName}}</button>
+
       <button mat-menu-item (click)="onLogout()">Logout</button>
-      <a mat-button  routerLink="/admin-panel" routerLinkActive="active">Manage</a>
+      <button mat-button *ngIf="isAdmin()" routerLink="/admin-panel" routerLinkActive="active">Manage</button>
     </ng-container>
+
+    
 
     <ng-container *ngIf="!isLoggedIn()">
       <button mat-menu-item routerLink="/products" routerLinkActive="active">Products</button>
@@ -44,9 +48,10 @@
       <a mat-button routerLink="/myorders" routerLinkActive="active">My Orders</a>
 
       <span class="example-spacer"></span>
+      <button mat-button> {{userName}}</button>
 
       <a mat-button (click)="onLogout()">Logout</a>
-      <a mat-button routerLink="/admin-panel" routerLinkActive="active">Manage</a>
+      <a mat-button *ngIf="isAdmin()" routerLink="/admin-panel" routerLinkActive="active">Manage</a>
     </ng-container>
 
     <ng-container *ngIf="!isLoggedIn()">

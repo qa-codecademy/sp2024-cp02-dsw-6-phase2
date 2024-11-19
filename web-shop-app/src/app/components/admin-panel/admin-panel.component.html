@@ -85,7 +85,7 @@
             <mat-error *ngIf="productForm.get('discount')?.hasError('max')">Discount must not exceed 100%</mat-error>
           </mat-form-field>
       
-          <button mat-raised-button color="primary" type="submit" [disabled]="productForm.invalid">Add Product</button>
+          <button mat-raised-button class="addButton" type="submit" [disabled]="productForm.invalid">Add Product</button>
         </form>
       </mat-card>
     </div>

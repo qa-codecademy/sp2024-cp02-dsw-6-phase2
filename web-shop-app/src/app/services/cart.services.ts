@@ -54,11 +54,13 @@ export class CartService {
 
     return this.http.delete<void>(`${apiUrl}/Cart?userId=${userId}&productId=${productId}`).pipe(
       tap(() => {
-        // After successful removal, update the cart data
-        this.getUserCart(userId); // Refetch the cart or update the state accordingly
+        
+        this.getUserCart(userId); 
+
         
       })
     );
+    
   }
  
 }

@@ -3,52 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.dataaccess\\migrations\\20241119181956_fix3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|solutionrelative:webshopapp.dataaccess\\migrations\\20241119181956_fix3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241119181514_fix2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebShopApp.DataAccess\\Migrations\\20241119181514_fix2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.dataaccess\\webappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|solutionrelative:webshopapp.dataaccess\\webappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.domain\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|solutionrelative:webshopapp.domain\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241118193003_orderupdate3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebShopApp.DataAccess\\Migrations\\20241118193003_orderupdate3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241118192625_orderupdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebShopApp.DataAccess\\Migrations\\20241118192625_orderupdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19817E04-392E-4722-8381-8FB9DFE5779A}|WebShopApp.Helpers\\WebShopApp.Helpers.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.helpers\\dependencyinjectionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19817E04-392E-4722-8381-8FB9DFE5779A}|WebShopApp.Helpers\\WebShopApp.Helpers.csproj|solutionrelative:webshopapp.helpers\\dependencyinjectionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DF6507C-5098-459B-9E72-9E3D3C50D34C}|WebShopApp\\WebShopApp.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DF6507C-5098-459B-9E72-9E3D3C50D34C}|WebShopApp\\WebShopApp.csproj|solutionrelative:webshopapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.services\\implementation\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|solutionrelative:webshopapp.services\\implementation\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.dataaccess\\migrations\\20241118192323_orderupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4E5A1EA-AF5F-465D-A8BA-79455AED5B38}|WebShopApp.DataAccess\\WebShopApp.DataAccess.csproj|solutionrelative:webshopapp.dataaccess\\migrations\\20241118192323_orderupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DF6507C-5098-459B-9E72-9E3D3C50D34C}|WebShopApp\\WebShopApp.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DF6507C-5098-459B-9E72-9E3D3C50D34C}|WebShopApp\\WebShopApp.csproj|solutionrelative:webshopapp\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.services\\implementation\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|solutionrelative:webshopapp.services\\implementation\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.services\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|solutionrelative:webshopapp.services\\interface\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|solutionrelative:webshopapp.services\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,162 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20241118193003_orderupdate3.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241118193003_orderupdate3.cs",
-              "RelativeDocumentMoniker": "WebShopApp.DataAccess\\Migrations\\20241118193003_orderupdate3.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241118193003_orderupdate3.cs",
-              "RelativeToolTip": "WebShopApp.DataAccess\\Migrations\\20241118193003_orderupdate3.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "20241119181956_fix3.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241119181956_fix3.cs",
+              "RelativeDocumentMoniker": "WebShopApp.DataAccess\\Migrations\\20241119181956_fix3.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241119181956_fix3.cs",
+              "RelativeToolTip": "WebShopApp.DataAccess\\Migrations\\20241119181956_fix3.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:30:03.524Z",
+              "WhenOpened": "2024-11-19T18:22:00.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "WebAppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\WebAppDbContext.cs",
               "RelativeDocumentMoniker": "WebShopApp.DataAccess\\WebAppDbContext.cs",
               "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\WebAppDbContext.cs",
               "RelativeToolTip": "WebShopApp.DataAccess\\WebAppDbContext.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAuwLgAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAALgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:29:08.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20241118192625_orderupdate2.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241118192625_orderupdate2.cs",
-              "RelativeDocumentMoniker": "WebShopApp.DataAccess\\Migrations\\20241118192625_orderupdate2.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241118192625_orderupdate2.cs",
-              "RelativeToolTip": "WebShopApp.DataAccess\\Migrations\\20241118192625_orderupdate2.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:26:25.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20241118192323_orderupdate.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241118192323_orderupdate.cs",
-              "RelativeDocumentMoniker": "WebShopApp.DataAccess\\Migrations\\20241118192323_orderupdate.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241118192323_orderupdate.cs",
-              "RelativeToolTip": "WebShopApp.DataAccess\\Migrations\\20241118192323_orderupdate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:23:23.55Z",
+              "WhenOpened": "2024-11-19T18:18:51.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\OrderItem.cs",
-              "RelativeDocumentMoniker": "WebShopApp.Domain\\Models\\OrderItem.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Models\\OrderItem.cs",
-              "RelativeToolTip": "WebShopApp.Domain\\Models\\OrderItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAARAAAAAAAAAA==",
+              "Title": "20241119181514_fix2.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241119181514_fix2.cs",
+              "RelativeDocumentMoniker": "WebShopApp.DataAccess\\Migrations\\20241119181514_fix2.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.DataAccess\\Migrations\\20241119181514_fix2.cs",
+              "RelativeToolTip": "WebShopApp.DataAccess\\Migrations\\20241119181514_fix2.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAQwDEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:21:34.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DependencyInjectionHelper.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Helpers\\DependencyInjectionHelper.cs",
-              "RelativeDocumentMoniker": "WebShopApp.Helpers\\DependencyInjectionHelper.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Helpers\\DependencyInjectionHelper.cs",
-              "RelativeToolTip": "WebShopApp.Helpers\\DependencyInjectionHelper.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:15:41.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserServices.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Services\\Implementation\\UserServices.cs",
-              "RelativeDocumentMoniker": "WebShopApp.Services\\Implementation\\UserServices.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Services\\Implementation\\UserServices.cs",
-              "RelativeToolTip": "WebShopApp.Services\\Implementation\\UserServices.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:13:15.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "WebShopApp\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\Controllers\\UserController.cs",
-              "RelativeToolTip": "WebShopApp\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAmwLgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T19:06:25.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Services\\Interface\\IUserService.cs",
-              "RelativeDocumentMoniker": "WebShopApp.Services\\Interface\\IUserService.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Services\\Interface\\IUserService.cs",
-              "RelativeToolTip": "WebShopApp.Services\\Interface\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T18:59:34.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IOrderService.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Services\\Interface\\IOrderService.cs",
-              "RelativeDocumentMoniker": "WebShopApp.Services\\Interface\\IOrderService.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Services\\Interface\\IOrderService.cs",
-              "RelativeToolTip": "WebShopApp.Services\\Interface\\IOrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T18:59:10.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OrderServices.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Services\\Implementation\\OrderServices.cs",
-              "RelativeDocumentMoniker": "WebShopApp.Services\\Implementation\\OrderServices.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Services\\Implementation\\OrderServices.cs",
-              "RelativeToolTip": "WebShopApp.Services\\Implementation\\OrderServices.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAowJAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T18:58:50.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "WebShopApp\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "WebShopApp\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAAgwMQAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T18:56:59.701Z",
+              "WhenOpened": "2024-11-19T18:15:14.904Z",
               "EditorCaption": ""
             }
           ]

@@ -20,7 +20,6 @@ import { ProductCardsCat2Component } from '../product-cards-cat2/product-cards-c
     ProductCardsCat2Component,
     MatCardModule,
     MatButtonModule,
-    RouterLink
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
@@ -31,4 +30,6 @@ export class HomeComponent {
   constructor(
     private authService: UserService,
   ) {}
+
+  
 }

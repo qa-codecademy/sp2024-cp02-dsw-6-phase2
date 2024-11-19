@@ -3,7 +3,8 @@
   It featured products of the day ....
 </button>
 <mat-grid-list [cols]="breakPoint" rowHeight="700px" (window:resize)="onResize($event)">
-  <mat-grid-tile *ngFor="let productFromParent of products; trackBy: trackByProduct">
+  <mat-grid-tile  *ngFor="let productFromParent of products; trackBy: trackByProduct">
+    
     <app-product-card [product]="productFromParent"></app-product-card>
   </mat-grid-tile>
 </mat-grid-list>

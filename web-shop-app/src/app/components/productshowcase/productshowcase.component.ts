@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, computed, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../../services/product.services';
 import { ProductDto } from '../../types/interfaces/product.interface';
 import { CommonModule } from '@angular/common';
 import { UserService } from '../../services/auth.services';
 import { CartService } from '../../services/cart.services';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-productshowcase',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,
+    MatButtonModule
+  ],
   templateUrl: './productshowcase.component.html',
   styleUrl: './productshowcase.component.scss'
 })
@@ -17,6 +20,8 @@ export class ProductshowcaseComponent implements OnInit {
   product: ProductDto | null = null;
   discountedPrice: number | undefined;
   quantity: number = 1;
+  isLoggedIn = computed(() => this.authService.isLoggedIn());
+
 
   constructor(
     private route: ActivatedRoute,

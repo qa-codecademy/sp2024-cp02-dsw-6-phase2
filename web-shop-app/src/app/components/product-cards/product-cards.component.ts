@@ -29,6 +29,7 @@ constructor(private productServices: ProductService){}
 
 ngOnInit(): void {
   this.fetchAllProducts(); 
+  this.onResize({ target: { innerWidth: window.innerWidth } });
 }
 
 fetchAllProducts(): void {
@@ -47,7 +48,14 @@ fetchAllProducts(): void {
 
 onResize(event: any) {
   
-  this.breakPoint = Math.floor(event.target.innerWidth / 600);
+  const width = event.target.innerWidth;
+  if (width < 600) {
+    this.breakPoint = 1; // 1 column on small screens
+  } else if (width < 900) {
+    this.breakPoint = 2; // 2 columns on medium screens
+  } else {
+    this.breakPoint = 3; // 3 columns on large screens
+  }
 }
 
 trackByProduct(index: number, product: ProductDto): any {
