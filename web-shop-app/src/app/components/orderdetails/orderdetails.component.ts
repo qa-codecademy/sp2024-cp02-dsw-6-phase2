@@ -5,13 +5,15 @@ import { OrderService } from '../../services/order.services';
 import { CommonModule } from '@angular/common';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-orderdetails',
   standalone: true,
   imports: [CommonModule,
     MatProgressSpinnerModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
 
   ],
   templateUrl: './orderdetails.component.html',

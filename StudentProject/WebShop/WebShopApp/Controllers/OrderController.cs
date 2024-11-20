@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using WebShopApp.Domain.Models;
@@ -10,7 +11,6 @@ using XAct.Security;
 
 namespace WebShopApp.Controllers
 {
-    [Authorization]
     [Route("api/[controller]")]
     [ApiController]
     public class OrderController : ControllerBase

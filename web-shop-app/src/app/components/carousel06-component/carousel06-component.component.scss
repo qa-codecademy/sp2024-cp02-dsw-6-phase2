@@ -8,9 +8,7 @@
   margin: 0;
   overflow: hidden;
 }
-div{
-  width: 80%;
-}
+
 
 button[mat-icon-button] {
   background-color: transparent; 
@@ -30,6 +28,7 @@ button[mat-icon-button]:hover {
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 10px;
+  width: 80%;
   max-width: 90vw; 
 }
 

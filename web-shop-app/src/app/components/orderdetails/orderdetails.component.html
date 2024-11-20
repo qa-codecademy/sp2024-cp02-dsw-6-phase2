@@ -24,10 +24,13 @@
   <mat-list>
     <mat-list-item *ngFor="let item of order.orderItems">
       <div class="product-details">
+        <strong>{{ item.product.productName }}</strong> - 
         <strong>{{ item.product.brand }}</strong> - 
         {{ item.quantity }} x {{ item.product.price | currency:"MKD " }}
       </div>
+      
     </mat-list-item>
+    
   </mat-list>
 
   <button mat-raised-button color="primary" (click)="goBack()">Back to Orders</button>

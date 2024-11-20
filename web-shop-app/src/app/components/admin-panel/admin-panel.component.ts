@@ -13,6 +13,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-panel',
@@ -43,7 +44,8 @@ export class AdminPanelComponent {
 constructor(private authServices:UserService,
   private productServices:ProductService,
   private orderServices:OrderService,
-  private fb:FormBuilder
+  private fb:FormBuilder,
+  private router:Router
 ){
   this.productForm = this.fb.group({
     productname: ['', [Validators.required, Validators.minLength(3)]],
@@ -82,6 +84,11 @@ fetchAllOrders(): void {
     (orders) => (this.orders = orders),
     (error) => console.error('Error fetching orders:', error)
   );
+}
+
+
+viewOrderDetails(orderId: number): void {
+  this.router.navigate(['/orderdetails', orderId]); // Assuming you have a route to view order details
 }
 
 // Add product

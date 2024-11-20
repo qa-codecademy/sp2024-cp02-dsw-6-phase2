@@ -64,7 +64,10 @@
     right: 0;
     margin-bottom: 10px; /* Space from the bottom */
   }
-  
+  li .detailsB{
+    position: absolute;
+    right: 100px;
+  }
   /* Ensure the button is centered vertically within the li */
   li .buttonOnSide {
     display: flex;

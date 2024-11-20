@@ -21,6 +21,7 @@ export const routes: Routes = [
         loadComponent: () => import('./components/products-cat/products-cat.component').then((module) => module.ProductsCatComponent)
     },
     { path: 'productlist/:name', component: ProductlistComponent },
+    
     { path: 'product/:id', component: ProductshowcaseComponent },
     {path: 'cart',
         canActivate:[authGuard],

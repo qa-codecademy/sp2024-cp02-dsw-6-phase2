@@ -3,17 +3,18 @@
     <mat-icon>shopping_basket</mat-icon>
   </button>
   <span class="logo" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-    WebShop App
+    ShopZen
   </span>
 
   <span class="example-spacer"></span>
-
+ 
   <!-- Menu button appears only on small screens -->
   <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="isSmallScreen">
     <mat-icon>menu</mat-icon>
   </button>
 
   <mat-menu #menu="matMenu">
+    
     <ng-container *ngIf="isLoggedIn()">
       <button mat-menu-item routerLink="/products" routerLinkActive="active">Products</button>
       <button mat-menu-item routerLink="/sale" routerLinkActive="active">Sales</button>

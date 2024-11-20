@@ -113,6 +113,8 @@
         </li>
       </ul>
     </div>
+
+
   
     <!-- Manage Orders Section -->
     <div *ngIf="currentSection === 'manageOrders'" class="section">
@@ -120,6 +122,7 @@
       <ul>
         <li *ngFor="let order of orders">
           Order #{{ order.id }} - {{ order.totalAmount }}
+          <button mat-button class="detailsB" (click)="viewOrderDetails(order.id)">Details</button>
           <button mat-button class="buttonOnSide" (click)="deleteOrder(order.id)">Delete</button>
           
         </li>

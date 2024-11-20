@@ -15,7 +15,6 @@ namespace WebShopApp.Controllers
         {
             _productService = productService;
         }
-        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreateProduct([FromBody] AddProductDto addProductDto)
         {
@@ -74,7 +73,6 @@ namespace WebShopApp.Controllers
             }
 
         }
-        [Authorize]
         [HttpDelete("{id}")]
         public ActionResult DeleteProduct(int id)
         {
@@ -95,7 +93,6 @@ namespace WebShopApp.Controllers
             }
 
         }
-        [Authorize]
         [HttpPut]
         public async Task<IActionResult> UpdateProduct([FromBody] UpdateProductDto updateProductDto)
         {

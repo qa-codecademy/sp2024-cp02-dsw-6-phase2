@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebShopApp.Domain.Models;
 using WebShopApp.DTOs.Cart;
 using WebShopApp.Mappers;
@@ -6,6 +7,8 @@ using WebShopApp.Services.Interface;
 
 namespace WebShopApp.Controllers
 {
+    [Authorize]
+
     [Route("api/[controller]")]
     [ApiController]
     public class CartController : ControllerBase

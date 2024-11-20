@@ -18,11 +18,11 @@
 
   <div class="price-section">
     <div *ngIf="product.discount > 0" class="discount-price">
-      <span>WS price</span>
+      <span> sZ price</span>
       <span class="price">{{ discountedPrice }} MKD</span>
     </div>
     <div class="regular-price" [class.line-through]="product.discount > 0">
-      Regular price: {{ product.price }} MKD
+      Price: {{ product.price }} MKD
     </div>
     <div class="add-to-cart">
       <button mat-raised-button color="primary" *ngIf="isLoggedIn()"   (click)="addToCart()">Add to cart</button>

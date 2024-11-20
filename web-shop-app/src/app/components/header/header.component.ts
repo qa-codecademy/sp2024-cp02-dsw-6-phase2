@@ -3,9 +3,15 @@ import { CommonModule } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import {MatMenuModule} from '@angular/material/menu'
 import { UserService } from '../../services/auth.services';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ProductService } from '../../services/product.services';
+import { MatInput, MatInputModule } from '@angular/material/input';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+
 
 @Component({
   selector: 'app-header',
@@ -16,7 +22,13 @@ import { UserService } from '../../services/auth.services';
     MatButtonModule,
     RouterLink,
     RouterLinkActive,
-    MatMenuModule
+    MatMenuModule,
+    FormsModule,
+    MatFormFieldModule ,
+    MatInputModule,
+    FormsModule ,
+    MatAutocompleteModule
+    
     
     
   ],
@@ -26,13 +38,16 @@ import { UserService } from '../../services/auth.services';
 export class HeaderComponent implements OnInit {
   isLoggedIn = computed(() => this.authService.isLoggedIn());
   isAdmin = computed(() => this.authService.isAdmin());
-
+  searchQuery: string = '';
   isMenuOpen = false;
   isSmallScreen = false;
   userName: string | null = null;
+  
 
   constructor(
     private authService: UserService,
+    private productServices:ProductService,
+    private router:Router
   ) {
     console.log('Constructor called');
   }
@@ -51,6 +66,8 @@ export class HeaderComponent implements OnInit {
     this.isSmallScreen = window.innerWidth < 768; 
     this.isMenuOpen = false; 
   }
+
+ 
   ngOnDestroy(): void {
     console.log('NgOnDestroy called');
   }

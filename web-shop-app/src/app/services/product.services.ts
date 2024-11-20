@@ -30,4 +30,8 @@ export class ProductService {
   filterByCategory(category:number):Observable<ProductDto[]>{
     return this.http.get<ProductDto[]>(`${apiUrl}/Product/Filter?category=${category}`)
   }
+
+  searchProducts(query: string): Observable<any[]> {
+    return this.http.get<any[]>(`${apiUrl}/Product/Filter?brand=${query}`);
+  }
 }

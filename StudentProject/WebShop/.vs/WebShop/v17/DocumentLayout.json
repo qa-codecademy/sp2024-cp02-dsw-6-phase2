@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.services\\implementation\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D99E048-503C-4ADC-A1EE-975F8A75C1E5}|WebShopApp.Services\\WebShopApp.Services.csproj|solutionrelative:webshopapp.services\\implementation\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp.domain\\enums\\userenum\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BDFAAE1-2F31-4EA5-845C-36CD9154449B}|WebShopApp.Domain\\WebShopApp.Domain.csproj|solutionrelative:webshopapp.domain\\enums\\userenum\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DF6507C-5098-459B-9E72-9E3D3C50D34C}|WebShopApp\\WebShopApp.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DF6507C-5098-459B-9E72-9E3D3C50D34C}|WebShopApp\\WebShopApp.csproj|solutionrelative:webshopapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DF6507C-5098-459B-9E72-9E3D3C50D34C}|WebShopApp\\WebShopApp.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DF6507C-5098-459B-9E72-9E3D3C50D34C}|WebShopApp\\WebShopApp.csproj|solutionrelative:webshopapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DF6507C-5098-459B-9E72-9E3D3C50D34C}|WebShopApp\\WebShopApp.csproj|c:\\users\\neboj\\onedrive\\desktop\\sp2024-cp02-dsw-6-phase2\\studentproject\\webshop\\webshopapp\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DF6507C-5098-459B-9E72-9E3D3C50D34C}|WebShopApp\\WebShopApp.csproj|solutionrelative:webshopapp\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,41 +26,41 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoleEnum.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Enums\\UserEnum\\RoleEnum.cs",
-              "RelativeDocumentMoniker": "WebShopApp.Domain\\Enums\\UserEnum\\RoleEnum.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Domain\\Enums\\UserEnum\\RoleEnum.cs",
-              "RelativeToolTip": "WebShopApp.Domain\\Enums\\UserEnum\\RoleEnum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "WebShopApp\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\Controllers\\CartController.cs",
+              "RelativeToolTip": "WebShopApp\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T20:36:33.457Z",
+              "WhenOpened": "2024-11-20T16:44:51.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserServices.cs",
-              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Services\\Implementation\\UserServices.cs",
-              "RelativeDocumentMoniker": "WebShopApp.Services\\Implementation\\UserServices.cs",
-              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp.Services\\Implementation\\UserServices.cs",
-              "RelativeToolTip": "WebShopApp.Services\\Implementation\\UserServices.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAmwGYAAAAvAAAAAAAAAA==",
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebShopApp\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebShopApp\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAmwGkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T18:23:01.239Z",
+              "WhenOpened": "2024-11-20T16:44:43.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "WebShopApp\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\Controllers\\UserController.cs",
               "RelativeToolTip": "WebShopApp\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAvwIQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwGIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T20:11:27.276Z",
+              "WhenOpened": "2024-11-20T16:39:31.28Z",
               "EditorCaption": ""
             }
           ]

@@ -95,8 +95,7 @@ namespace WebShopApp.Controllers
 
         }
 
-
-        [Authorize]//user must be logged in to accses method
+        [Authorize]
         [HttpGet("getall")]
         public ActionResult<List<UserDto>> GetAll()
         {
@@ -132,7 +131,6 @@ namespace WebShopApp.Controllers
             }
         }
 
-        [Authorize]
         [HttpPut("updateUser")]
         public IActionResult UpdateUser([FromBody] UpdateUserDto updateUserDto)
         {
@@ -150,7 +148,6 @@ namespace WebShopApp.Controllers
             }
         }
 
-        [Authorize]
         [HttpDelete("deleteUser")]
         public IActionResult DeleteUser(int id)
         {

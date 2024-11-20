@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "p4vnSqkspVBe7FLmnlolA/wzgKjGZ2z7vWFjO9MAxCw=",
+  "Hash": "v2UL2WOXr+HFHAwRqATW/B11Qjk9G5cg1Yem26ipenE=",
   "Source": "WebShopApp",
   "BasePath": "_content/WebShopApp",
   "Mode": "Default",
@@ -397,6 +397,25 @@
       "OriginalItemSpec": "wwwroot\\images\\77a5c918-3ab9-468c-8e82-e5bc4cd7e078.jpg"
     },
     {
+      "Identity": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\wwwroot\\images\\81a2b67a-b760-42c3-8262-ae08532c4061.png",
+      "SourceId": "WebShopApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\wwwroot\\",
+      "BasePath": "_content/WebShopApp",
+      "RelativePath": "images/81a2b67a-b760-42c3-8262-ae08532c4061.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\81a2b67a-b760-42c3-8262-ae08532c4061.png"
+    },
+    {
       "Identity": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\wwwroot\\images\\82386bc2-a8a4-4b18-b1b0-06a92b53cd48.jpg",
       "SourceId": "WebShopApp",
       "SourceType": "Discovered",
@@ -661,6 +680,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\b40020dd-21c9-4fa7-bef2-0dc833a1578c.webp"
+    },
+    {
+      "Identity": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\wwwroot\\images\\b6d64a35-fdf4-45ee-8656-6a1a2ab8b905.png",
+      "SourceId": "WebShopApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\wwwroot\\",
+      "BasePath": "_content/WebShopApp",
+      "RelativePath": "images/b6d64a35-fdf4-45ee-8656-6a1a2ab8b905.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b6d64a35-fdf4-45ee-8656-6a1a2ab8b905.png"
     },
     {
       "Identity": "C:\\Users\\neboj\\OneDrive\\Desktop\\sp2024-cp02-dsw-6-phase2\\StudentProject\\WebShop\\WebShopApp\\wwwroot\\images\\b9bd11fd-63fd-4f8e-ad70-f9bcb772cb80.jpg",
